@@ -14,7 +14,7 @@ export default function Navbar() {
             <AppBar className={"navbar"} position="fixed" sx={{left: '50%', transform: 'translateX(-50%)', width: '60%', backgroundColor: 'black', paddingLeft: '0'}}>
                 <Toolbar sx={{padding: 0}} >
                     <Logo/>
-                    <h3>Lyubomir Georgiev</h3>
+                    <h3 className={"navbar-name"}>Lyubomir Georgiev</h3>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 2 }}>
                     </Typography>
                     <Button className={"navbar-item"} color="white" style={{fontSize: "1.5rem", textTransform: "none"}}>Intro</Button>

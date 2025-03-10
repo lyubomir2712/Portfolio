@@ -11,3 +11,8 @@
 .navbar-item{
     color: red;
 }
+
+.navbar-name{
+    padding-left: 1rem;
+    padding-right: 8rem;
+}
