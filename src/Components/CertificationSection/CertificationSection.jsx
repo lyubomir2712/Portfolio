@@ -1,5 +1,5 @@
 import './CertificationSection.css'
-export function CertificationSection() {
+export default function CertificationSection() {
     return (
         <section className="certification-section">
             <article className="certificates-article">
