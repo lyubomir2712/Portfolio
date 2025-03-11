@@ -1,0 +1,48 @@
+.introduction-section{
+    margin-top: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+.introduction-article{
+    background-color: red;
+    flex: 1;
+    min-height: 10rem;
+}
+.tech-stack-article{
+    background-color: green;
+    flex: 1;
+    min-height: 10rem;
+}
+
+.tech-stack-article .tech-stack, .introduction-article .introduction{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.introduction-description span{
+    color: blue;
+    font-weight: bolder;
+}
+
+.introduction-socials{
+    display: flex;
+    gap: 1rem;
+    justify-content: left;
+    margin-top: 1.5rem;
+}
+
+.introduction, .introduction-description{
+    text-align: left;
+}
+
+.cv-downloader{
+    text-align: center;
+    padding: 1rem;
+    width: 8rem;
+    background-color: blue;
+    color: white;
+    display: block;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+}
+
