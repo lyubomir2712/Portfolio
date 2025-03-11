@@ -14,7 +14,8 @@ export default function IntroductionSection() {
             </article>
             <article className={"tech-stack-article"}>
                 <h3 className={"tech-stack"}>Tech Stack:</h3>
+                    <img src="https://readme-typing-svg.demolab.com/?lines=ASP.NET;C%23;SqlServer;JavaScript;React;TypeScript;HTML;CSS;Docker;Azure&font=Fira%20Code&center=true&width=500&height=200&color=007BFF&vCenter=true&pause=1000&size=70&weight=600" />
             </article>
-        </section>
+            </section>
     )
 }

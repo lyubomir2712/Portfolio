@@ -5,11 +5,11 @@
 }
 
 .navbar{
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid white;
 }
 
 .navbar-item{
-    color: red;
+    color: white;
 }
 
 .navbar-name{
