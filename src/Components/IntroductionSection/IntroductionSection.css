@@ -1,7 +1,6 @@
 .introduction-section{
     margin-top: 4rem;
     display: flex;
-    gap: 2rem;
 }
 .introduction-article{
     background-color: red;

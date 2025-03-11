@@ -1,0 +1,16 @@
+.certification-section{
+   display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5rem;
+
+}
+.certificates-article{
+    background-color: purple;
+    flex: 2;
+}
+
+.certificates-description{
+    flex: 1;
+    background-color: orangered;
+}
