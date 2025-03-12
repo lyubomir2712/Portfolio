@@ -1,0 +1,43 @@
+.contact-title {
+
+}
+
+.contact-title::after {
+    content: "";
+    display: block;
+    width: 5%;
+    height: 0.2rem;
+    background-color: blue;
+    margin: 0.6rem auto 0;
+}
+
+.contact-form {
+    display: block;
+    padding: 1rem 1rem;
+    background-color: lightgray;
+    border-radius: 0.3rem;
+    width: 40rem;
+    margin: 0 auto;
+}
+
+.contact-form input {
+    background-color: orangered;
+    width: 40rem;
+    height: 3rem;
+}
+
+.contact-form-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact-btn{
+    margin-top: 1rem;
+    height: 3rem;
+    width: 7rem;
+    border-radius: 0.5rem;
+    background-color: orangered;
+}
+
