@@ -4,6 +4,7 @@ import IntroductionSection from "./Components/IntroductionSection/IntroductionSe
 import CertificationSection from "./Components/CertificationSection/CertificationSection.jsx";
 import ProjectsSection from "./Components/ProjectsSection/ProjectsSection.jsx";
 import ContactSection from "./Components/ContactSection/ContactSection.jsx";
+import {Footer} from "./Components/Footer/Footer.jsx";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -15,6 +16,7 @@ function App() {
         <CertificationSection/>
         <ProjectsSection/>
         <ContactSection/>
+        <Footer/>
     </>
   )
 }
