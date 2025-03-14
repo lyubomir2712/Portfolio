@@ -45,7 +45,7 @@
     top: 3.1rem;
 }
 
-.input-container:hover::before {
+.input-container:focus-within::before {
     transform: scaleX(1);
 }
 
