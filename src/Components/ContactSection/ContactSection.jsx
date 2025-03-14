@@ -1,14 +1,28 @@
 import './ContactSection.css'
 
 export default function ContactSection() {
+    // const [isFocused, setIsFocused] = useState(false);
     return (
         <section className="contact-section">
             <h2 className="contact-title">Contact Me</h2>
             <form className="contact-form">
                 <div className="contact-form-content">
-                    <input className="username-input" type="text" placeholder="Username*" />
-                    <input className="email-input" type="email" placeholder="Email*" />
-                    <input className="message-input" type="text" placeholder="Message*"/>
+
+                    <div className="input-container">
+                        <input
+                            // className={`border-2 p-2 rounded ${isFocused ? "border-blue-500 bg-yellow-100" : "border-gray-300"}`}
+                            // onFocus={() => setIsFocused(true)} onBlur={() => setIsFocused(false)}
+                        className="username-input" type="text" placeholder="Username*" />
+                    </div>
+
+                    <div className="input-container">
+                        <input className="email-input" type="text" placeholder="Email*" />
+                    </div>
+
+                    <div className="input-container">
+                        <input className="message-input" type="text" placeholder="Message*"/>
+                    </div>
+
                 </div>
                 <button className="contact-btn" type="submit">Send</button>
             </form>

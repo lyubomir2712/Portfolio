@@ -20,7 +20,7 @@
     margin: 0 auto;
 }
 
-.contact-form input {
+.input-container input {
     background-color: #100d1e;
     width: 40rem;
     height: 3rem;
@@ -29,19 +29,24 @@
     box-shadow: none;
     color: #fff;
 }
-.contact-form input ::after{
+
+.input-container{
+    position: relative;
+}
+
+.input-container::before {
     content: "";
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0;
+    width: 100.5%;
     height: 2px;
-    background-color: white;
-    transition: width 0.3s ease-out, left 0.3s ease-out;}
+    background: purple;
+    transform: scaleX(0);
+    transition: all 0.2s ease;
+    top: 3.1rem;
+}
 
-.contact-form input:last-of-type
-{
-    height: 7rem;
+.input-container:hover::before {
+    transform: scaleX(1);
 }
 
 .contact-form-content{
