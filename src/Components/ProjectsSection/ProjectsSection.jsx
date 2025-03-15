@@ -11,10 +11,9 @@ export default function ProjectsSection() {
                         <img src="../../../public/testImage.jpeg" alt="project-card"/>
                     </div>
                     <div className="projects-card-content">
-                        <h2>Name</h2>
-                        <p>
+                        <h2 className="card-title">Name</h2>
+                        <p className="card-description">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores aspernatur aut consequatur
-                            culpa cupiditate deserunt dolor fugit illum inventore iusto laboriosam molestias nihil, odit porro sunt totam ut voluptatem.
                         </p>
 
                         <div className="button-area">
@@ -28,10 +27,9 @@ export default function ProjectsSection() {
                         <img src="../../../public/testImage.jpeg" alt="project-card"/>
                     </div>
                     <div className="projects-card-content">
-                        <h2>Name</h2>
-                        <p>
+                        <h2 className="card-title">Name</h2>
+                        <p className="card-description">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores aspernatur aut consequatur
-                            culpa cupiditate deserunt dolor fugit illum inventore iusto laboriosam molestias nihil, odit porro sunt totam ut voluptatem.
                         </p>
 
                         <div className="button-area">
@@ -44,10 +42,9 @@ export default function ProjectsSection() {
                     <div className="projects-card-image">
                         <img src="../../../public/testImage.jpeg" alt="project-card"/>
                         <div className="projects-card-content">
-                            <h2>Name</h2>
-                            <p>
+                            <h2 className="card-title">Name</h2>
+                            <p className="card-description">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores aspernatur aut consequatur
-                                culpa cupiditate deserunt dolor fugit illum inventore iusto laboriosam molestias nihil, odit porro sunt totam ut voluptatem.
                             </p>
 
                             <div className="button-area">
@@ -61,10 +58,9 @@ export default function ProjectsSection() {
                     <div className="projects-card-image">
                         <img src="../../../public/testImage.jpeg" alt="project-card"/>
                         <div className="projects-card-content">
-                            <h2>Name</h2>
-                            <p>
+                            <h2 className="card-title">Name</h2>
+                            <p className="card-description">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores aspernatur aut consequatur
-                                culpa cupiditate deserunt dolor fugit illum inventore iusto laboriosam molestias nihil, odit porro sunt totam ut voluptatem.
                             </p>
 
                             <div className="button-area">
