@@ -30,6 +30,11 @@
     color: #fff;
 }
 
+.input-container input::placeholder
+{
+    color: red
+}
+
 .input-container{
     position: relative;
 }
@@ -39,10 +44,10 @@
     position: absolute;
     width: 100.5%;
     height: 2px;
-    background: purple;
+    background: #6370e2;
     transform: scaleX(0);
     transition: all 0.2s ease;
-    top: 3.1rem;
+    top: 3rem;
 }
 
 .input-container:focus-within::before {

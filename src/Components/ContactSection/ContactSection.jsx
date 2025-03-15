@@ -9,14 +9,11 @@ export default function ContactSection() {
                 <div className="contact-form-content">
 
                     <div className="input-container">
-                        <input
-                            // className={`border-2 p-2 rounded ${isFocused ? "border-blue-500 bg-yellow-100" : "border-gray-300"}`}
-                            // onFocus={() => setIsFocused(true)} onBlur={() => setIsFocused(false)}
-                        className="username-input" type="text" placeholder="Username*" />
+                        <input className="username-input" type="text" placeholder="Username*" />
                     </div>
 
                     <div className="input-container">
-                        <input className="email-input" type="text" placeholder="Email*" />
+                        <input className="email-input" type="email" placeholder="Email*" />
                     </div>
 
                     <div className="input-container">
