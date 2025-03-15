@@ -16,8 +16,8 @@ export default function ContactSection() {
                         <input className="email-input" type="email" placeholder="Email*" />
                     </div>
 
-                    <div className="input-container">
-                        <input className="message-input" type="text" placeholder="Message*"/>
+                    <div className="textarea-container">
+                        <textarea className="message-input" placeholder="Message*"/>
                     </div>
 
                 </div>
