@@ -1,3 +1,6 @@
+.contact-section {
+    margin-top: 6rem;
+}
 .contact-title {
     font-size: 2rem;
 }
@@ -22,17 +25,17 @@
 
 
 .message-input {
-    height: 10rem;
+    height: 7rem;
     resize: none;
     width: 40rem;
-    background-color: #100d1e;
+    background-color: #181c33;
     outline: none;
     border: none;
     box-shadow: none;
 }
 
 .input-container input {
-    background-color: #100d1e;
+    background-color: #181c31;
     width: 40rem;
     height: 3rem;
     outline: none;
@@ -40,8 +43,6 @@
     box-shadow: none;
     color: #fff;
 }
-
-
 
 .textarea-container::before {
     content: "";
@@ -58,15 +59,14 @@
     transform: scaleX(1);
 }
 
-
-
 .input-container input::placeholder, .textarea-container .message-input::placeholder
 {
-    color: red
+    color: white;
 }
 
 .input-container, .textarea-container {
     position: relative;
+    border-bottom: 2px solid black;
 }
 
 .input-container::before {

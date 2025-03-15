@@ -11,7 +11,7 @@ import Logo from "./Logo.jsx";
 export default function Navbar() {
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar className={"navbar"} position="fixed" sx={{left: '50%', transform: 'translateX(-50%)', width: '60%', backgroundColor: 'black', paddingLeft: '0'}}>
+            <AppBar className={"navbar"} position="fixed" sx={{left: '50%', transform: 'translateX(-50%)', width: '60%', backgroundColor: '#100d1e', paddingLeft: '0'}}>
                 <Toolbar sx={{padding: 0}} >
                     <Logo/>
                     <h3 className={"navbar-name"}>Lyubomir Georgiev</h3>
