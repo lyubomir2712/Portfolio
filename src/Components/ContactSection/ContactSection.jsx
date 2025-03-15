@@ -3,7 +3,7 @@ import './ContactSection.css'
 export default function ContactSection() {
     // const [isFocused, setIsFocused] = useState(false);
     return (
-        <section className="contact-section">
+        <section id="contact-section" className="contact-section">
             <h2 className="contact-title">Contact Me</h2>
             <form className="contact-form">
                 <div className="contact-form-content">

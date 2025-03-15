@@ -1,7 +1,7 @@
 import './CertificationSection.css'
 export default function CertificationSection() {
     return (
-        <section className="certification-section">
+        <section id="certification-section" className="certification-section">
             <article className="certificates-article">
 
             </article>

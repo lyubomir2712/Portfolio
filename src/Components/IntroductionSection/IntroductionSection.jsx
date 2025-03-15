@@ -2,7 +2,7 @@ import './IntroductionSection.css'
 
 export default function IntroductionSection() {
     return (
-        <section className={"introduction-section"}>
+        <section id="introduction-section" className={"introduction-section"}>
             <article className={"introduction-article"}>
                 <h3 className={"introduction"}>Hi, I'm Lyubo</h3>
                 <p className={"introduction-description"}>I'm a <span>full-stack developer</span> from Veliko Tarnovo,<br/>Bulgaria.</p>
