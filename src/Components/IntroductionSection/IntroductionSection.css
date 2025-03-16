@@ -4,7 +4,7 @@
     justify-content: center;
 }
 .introduction-article{
-    background-color: red;
+    /*background-color: red;*/
     height: 20rem;
     width: 30rem;
 
@@ -13,7 +13,7 @@
 .tech-stack-article{
     height: 20rem;
     width: 28rem;
-    background-color: green;
+    /*background-color: green;*/
     min-height: 10rem;
 }
 
@@ -56,8 +56,17 @@
     font-size: 1.1rem;
 }
 
-
 .cv-downloader:hover {
     filter: brightness(1.1);
+}
+
+.icon{
+    color: white;
+    font-size: 1.7rem;
+    width: auto;
+}
+
+.icon:hover{
+    filter: brightness(0.7);
 }
 

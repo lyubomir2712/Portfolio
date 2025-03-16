@@ -8,7 +8,7 @@ export default function ProjectsSection() {
             <div className="projects-container">
                 <div className="projects-card">
                     <div className="projects-card-image">
-                        <img src="../../../public/testImage.jpeg" alt="project-card"/>
+                        <img src="../../../public/HotelBookingImg.jpg" alt="project-card"/>
                     </div>
                     <div className="projects-card-content">
                         <h2 className="card-title">Hotel Booking CRUD application</h2>
@@ -24,7 +24,7 @@ export default function ProjectsSection() {
                 </div>
                 <div className="projects-card">
                     <div className="projects-card-image">
-                        <img src="../../../public/testImage.jpeg" alt="project-card"/>
+                        <img src="../../../public/StockApiImg.webp" alt="project-card"/>
                     </div>
                     <div className="projects-card-content">
                         <h2 className="card-title">Stock Exchange</h2>
@@ -40,7 +40,7 @@ export default function ProjectsSection() {
                 </div>
                 <div className="projects-card">
                     <div className="projects-card-image">
-                        <img src="../../../public/testImage.jpeg" alt="project-card"/>
+                        <img src="../../../public/CarWashImg.jpeg" alt="project-card"/>
                     </div>
                         <div className="projects-card-content">
                             <h2 className="card-title">GTR Car Wash</h2>
@@ -57,7 +57,7 @@ export default function ProjectsSection() {
                 </div>
                 <div className="projects-card">
                     <div className="projects-card-image">
-                        <img src="../../../public/testImage.jpeg" alt="project-card"/>
+                        <img src="../../../public/BoardGameImg.png" alt="project-card"/>
                     </div>
                         <div className="projects-card-content">
                             <h2 className="card-title">English Literature Board Game</h2>
