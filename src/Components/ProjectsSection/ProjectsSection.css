@@ -42,7 +42,8 @@
 }
 
 .projects-card-image img{
-    height: auto;
+    flex: 1;
+    height: 9rem;
     width: 100%;
     -webkit-border-top-left-radius: 0.5rem;
     -webkit-border-top-right-radius: 0.5rem;
