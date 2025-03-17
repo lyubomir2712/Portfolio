@@ -12,7 +12,7 @@ export default function Navbar() {
         <Box sx={{ flexGrow: 1 }}>
             <AppBar className={"navbar"} position="fixed" sx={{left: '50%', transform: 'translateX(-50%)', width: '57.15%', backgroundColor: '#100d1ead', paddingLeft: '0'}}>
                 <Toolbar sx={{padding: 0}} >
-                    <a href="#"><Logo/></a>
+                    <p><a href="#"><Logo/></a></p>
                     <h3 className={"navbar-name"}>Lyubomir Georgiev</h3>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 2 }}>
                     </Typography>

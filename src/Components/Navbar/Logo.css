@@ -1,0 +1,9 @@
+.logo{
+    width: 1.5rem;
+    height: auto;
+    stroke-width: 3rem;
+}
+
+.logo path{
+    stroke-width: 2rem;
+}
