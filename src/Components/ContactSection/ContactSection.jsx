@@ -1,7 +1,6 @@
 import './ContactSection.css'
 
 export default function ContactSection() {
-    // const [isFocused, setIsFocused] = useState(false);
     return (
         <section id="contact-section" className="contact-section">
             <h2 className="contact-title">Contact Me</h2>
@@ -9,15 +8,18 @@ export default function ContactSection() {
                 <div className="contact-form-content">
 
                     <div className="input-container">
-                        <input className="username-input" type="text" placeholder="Username*" />
+                            <input className="username-input" type="text"/>
+                            <div className="label-line">Username *</div>
                     </div>
 
                     <div className="input-container">
-                        <input className="email-input" type="email" placeholder="Email*" />
+                            <input className="email-input" type="email"/>
+                            <div className="label-line">Email *</div>
                     </div>
 
                     <div className="textarea-container">
-                        <textarea className="message-input" placeholder="Message*"/>
+                        <textarea className="message-input"/>
+                        <div className="label-line">Password *</div>
                     </div>
 
                 </div>
