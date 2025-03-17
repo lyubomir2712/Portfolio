@@ -19,29 +19,20 @@
     padding: 1rem 1rem 0.6rem 1rem;
     background-color: #1a1d35;
     border-radius: 0.3rem;
-    width: 40rem;
+    width: 50rem;
     margin: 0 auto;
-}
-
-.message-input {
-    height: 7rem;
-    resize: none;
-    width: 40rem;
-    background-color: #181c31;
-    outline: none;
-    border: none;
-    box-shadow: none;
 }
 
 .textarea-container::before {
     content: "";
     position: absolute;
-    width: 100.5%;
+    width: 100%;
     height: 2px;
-    background: #6370e2;
+    background: dodgerblue;
     transform: scaleX(0);
     transition: all 0.2s ease;
-    top: 7.4rem;
+    top: 10rem;
+    left: 0;
 }
 
 .textarea-container:focus-within::before {
@@ -53,7 +44,7 @@
     position: absolute;
     width: 100%;
     height: 2px;
-    background: #6370e2;
+    background: dodgerblue;
     transform: scaleX(0);
     transition: all 0.2s ease;
     top: 3.4rem;
@@ -68,7 +59,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .contact-btn{
@@ -94,7 +85,7 @@ input{
     position: absolute;
     left: 0;
     outline: none;
-    font-size: 2.2rem;
+    font-size: 1rem;
     padding: 0;
     line-height: 80px;
     background: transparent;
@@ -110,7 +101,6 @@ input{
     color: #f0ffff;
     transition: 0.2s ease;
     padding: 0 12px;
-
 }
 
 input:focus, .label-line{
@@ -121,13 +111,12 @@ input:focus + .label-line{
     height: 30px;
     line-height: 30px;
     padding: 0 7px;
-    transform: translate(0, -3px) scale(0.68);
     z-index: 1111;
 }
 
 .input-container{
     position: relative;
-    width: 40rem;
+    width: 50rem;
     height: 3.5rem;
     line-height: 80px;
     background-color: transparent;
@@ -136,31 +125,47 @@ input:focus + .label-line{
 
 .textarea-container{
     position: relative;
-    border-bottom: solid 2px black;
+    width: 50rem;
+    height: 10rem;
+    line-height: 80px;
+    background-color: transparent;
+    border-bottom : 2px solid black;
 }
 
 .message-input{
-    /*width: 100%;*/
-    /*height: 100%;*/
-    /*position: absolute;*/
-    /*left: 0;*/
-    /*outline: none;*/
-    /*font-size: 2.2rem;*/
-    /*padding: 0;*/
-    /*line-height: 80px;*/
-    /*background: transparent;*/
-    /*transition: 0.1s ease;*/
-    /*z-index: 1111;*/
-    /*border: none;*/
-    /*box-shadow: none;*/
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    outline: none;
+    font-size: 1rem;
+    padding: 0;
+    transition: 0.1s ease;
+    z-index: 1111;
+    border: none;
+    box-shadow: none;
+    resize: none;
+    color: white;
 }
 
 .message-input:focus + .label-line{
     height: 30px;
     line-height: 30px;
     padding: 0 7px;
-    transform: translate(0, -3px) scale(0.68);
+    transform: translate(-12px, -1px) scale(0.68);
     z-index: 1111;
 }
+
+.username-input:focus + .label-line{
+    transform: translate(-12px, -1px) scale(0.68);
+}
+
+.email-input:focus + .label-line{
+    transform: translate(-4px, -1px) scale(0.68);
+}
+
+
+
 
 
