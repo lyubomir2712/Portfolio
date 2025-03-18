@@ -5,7 +5,7 @@
 }
 
 .navbar{
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid white;
     backdrop-filter: blur(2px);
     z-index: 1000;
     -webkit-backdrop-filter: blur(2px);
