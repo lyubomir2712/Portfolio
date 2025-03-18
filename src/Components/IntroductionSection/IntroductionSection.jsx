@@ -9,15 +9,14 @@ export default function IntroductionSection() {
                 <h3 className={"introduction"}>Hi, I'm Lyubo</h3>
                 <p className={"introduction-description"}>I am a <span>full-stack developer</span> from Veliko Tarnovo,<br/>Bulgaria.</p>
                 <div className={"introduction-socials"}>
-                    <a href={"#"}><i className="bi bi-github icon"></i></a>
-                    <a href={"#"}><i className="bi bi-linkedin icon"></i></a>
+                    <a href={"https://github.com/lyubomir2712"}><i className="bi bi-github icon"></i></a>
+                    <a href={"https://www.linkedin.com/in/lyubomir-georgiev-ab9116248/"}><i className="bi bi-linkedin icon"></i></a>
                 </div>
-                <a className={"cv-downloader"} href="" download="LyubomirGeorgievCV.pdf">Download CV</a>
+                <a className={"cv-downloader"} href="LyubomirGeorgievGeorgievResume.pdf" download="LyubomirGeorgievResume.pdf">Download CV</a>
             </article>
             <article className={"tech-stack-article"}>
                 <h3 className={"tech-stack"}>Tech Stack:</h3>
                 <Typewriter />
-                    {/*<img src="https://readme-typing-svg.demolab.com/?lines=ASP.NET;C%23;SQL;JavaScript;React;TypeScript;HTML;CSS;Docker;Azure&font=Fira%20Code&center=true&width=400&height=100&color=6370e2&vCenter=true&pause=1000&size=50&weight=600" />*/}
             </article>
             </section>
     )
