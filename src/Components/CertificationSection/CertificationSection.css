@@ -8,7 +8,6 @@
 .certificates-article{
     height: 25rem;
     width: 42rem;
-    background-color: purple;
 }
 
 .certificates-container{
@@ -62,7 +61,7 @@
 .certificates-description{
     width: 19rem;
     height: 12rem;
-    background: whitesmoke;
+    align-self: center;
 }
 
 .certificates-description h3{

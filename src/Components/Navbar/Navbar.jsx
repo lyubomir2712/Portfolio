@@ -9,7 +9,7 @@ import Logo from "./Logo.jsx";
 export default function Navbar() {
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar className={"navbar"} position="fixed" sx={{left: '50%', transform: 'translateX(-50%)', width: '57.15%', backgroundColor: '#100d1ead', paddingLeft: '0'}}>
+            <AppBar className={"navbar"} position="fixed" sx={{left: '50%', transform: 'translateX(-50%)', width: '51%', backgroundColor: '#100d1ead', paddingLeft: '0'}}>
                 <Toolbar sx={{padding: 0}}>
                     {/*<p><a href="#"><Logo/></a></p>*/}
                     <i className="bi bi-code-slash logo"></i>
