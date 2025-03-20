@@ -94,12 +94,11 @@ input{
     box-shadow: none;
     resize: none;
     color: white;
-    padding-left: 0.4rem;
+    padding-left: 0.7rem;
     padding-top: 1.5rem;
     font-size: inherit;
     font-family: inherit;
     font-weight: inherit;
-    border: inherit;
 }
 
 .textarea-container::before {
@@ -162,7 +161,7 @@ input:focus + .label-line{
     height: 30px;
     line-height: 30px;
     padding: 0 7px;
-    transform: translate(-12px, -1px) scale(0.68);
+    transform: translate(-9px, -1px) scale(0.68);
     z-index: 1111;
 }
 
@@ -171,7 +170,7 @@ input:focus + .label-line{
 }
 
 .email-input:focus + .label-line{
-    transform: translate(-4px, -1px) scale(0.68);
+    transform: translate(-6px, -1px) scale(0.68);
 }
 
 
@@ -193,7 +192,7 @@ input:not(:placeholder-shown) + .label-line {
     height: 30px;
     line-height: 30px;
     padding: 0 7px;
-    transform: translate(-12px, -1px) scale(0.68);
+    transform: translate(-9px, -1px) scale(0.68);
     z-index: 1111;
     pointer-events: none;
     user-select: none;
@@ -206,7 +205,7 @@ input:not(:placeholder-shown) + .label-line {
 
 .email-input:focus + .label-line,
 .email-input:not(:placeholder-shown) + .label-line {
-    transform: translate(-4px, -1px) scale(0.68);
+    transform: translate(-6px, -1px) scale(0.68);
 }
 
 
