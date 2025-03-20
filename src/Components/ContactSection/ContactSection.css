@@ -37,7 +37,6 @@
     line-height: 80px;
     background-color: transparent;
     border-bottom : 2px solid black;
-    vertical-align: bottom;
 }
 
 input{
@@ -89,7 +88,6 @@ input{
     position: absolute;
     left: 0;
     outline: none;
-    font-size: 0.85rem;
     transition: 0.1s ease;
     z-index: 1111;
     border: none;
@@ -98,6 +96,10 @@ input{
     color: white;
     padding-left: 0.4rem;
     padding-top: 1.5rem;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    border: inherit;
 }
 
 .textarea-container::before {
@@ -115,9 +117,6 @@ input{
 .textarea-container:focus-within::before {
     transform: scaleX(1);
 }
-
-
-
 
 
 .contact-btn{
@@ -159,9 +158,6 @@ input:focus + .label-line{
 }
 
 
-
-
-
 .message-input:focus + .label-line{
     height: 30px;
     line-height: 30px;
@@ -187,7 +183,6 @@ input:not(:placeholder-shown) + .label-line {
     height: 30px;
     line-height: 30px;
     padding: 0 7px;
-    transform: translate(-12px, -1px) scale(0.68);
     z-index: 1111;
     pointer-events: none;
     user-select: none;
