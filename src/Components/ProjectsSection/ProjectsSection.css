@@ -20,7 +20,7 @@
 .projects-container {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 1.8rem;
     justify-content: center;
     margin: 0 auto;
 }
