@@ -35,8 +35,8 @@
     width: 43rem;
     height: 3.5rem;
     line-height: 80px;
-    background-color: transparent;
-    border-bottom : 2px solid black;
+    background-color: #191b33;
+    border-bottom : 1px solid black;
 }
 
 input{
@@ -77,8 +77,8 @@ input{
     width: 43rem;
     height: 8rem;
     line-height: 80px;
-    background-color: transparent;
-    border-bottom : 2px solid black;
+    background-color: #191b33;
+    border-bottom : 1px solid black;
 }
 
 .message-input{
