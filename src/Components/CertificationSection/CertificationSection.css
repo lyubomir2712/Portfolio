@@ -1,62 +1,70 @@
 .certification-section{
-   display: flex;
+    display: flex;
     flex-direction: row;
-    margin: 2rem 0 auto;
     width: 100%;
     justify-content: center;
+    gap: 0;
+
 }
+
 .certificates-article{
     height: 25rem;
-    width: 42rem;
+    width: 40rem;
 }
 
 .certificates-container{
     position: relative;
     height: 25rem;
-    width: 42rem;
+    width: 40rem;
 }
 
+.certificate-container{
+    filter: blur(1px) grayscale(30%);
+    position: absolute;
+}
+
+.certificate-container:hover{
+    filter: blur(0) grayscale(0);
+}
 
 .certificate-one-container{
-    position: absolute;
     left: 0;
     top: 15%;
 }
 
 .certificate-two-container{
-    position: absolute;
-    left: 27%;
+    left: 29%;
     top: 10%;
     z-index: 1;
 }
 
 .certificate-three-container{
-    position: absolute;
-    right: 12%;
+    right: 6%;
     top: 15%;
 }
 
-.certificate-one{
+.certificate{
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.certificate:hover{
+    transform: scale(1.1);
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.certificate-one, .certificate-three{
     height: 15rem;
     width: 12.5rem;
     border: 2px solid white;
-    border-radius: 7px;
+    border-radius: 5px;
 }
 
 .certificate-two{
-    height: 18rem;
-    width: 14rem;
+    height: 17.5rem;
+    width: 14.25rem;
     border: 2px solid white;
-    border-radius: 7px;
+    border-radius: 6px;
 }
-
-.certificate-three{
-    height: 15rem;
-    width: 12.5rem;
-    border: 2px solid white;
-    border-radius: 7px;
-}
-
 
 .certificates-description{
     width: 19rem;
