@@ -43,9 +43,9 @@ export default function CertificationSection() {
                 </div>
             </article>
             <article className="certificates-description">
-                <h3>Software University</h3>
+                <h3>Udemy</h3>
                 <h5>.NET Fullstack developer</h5>
-                <p>An instense software enineering program from which I acquired invaluable skills to create modern web applications.</p>
+                <p>I’ve earned Udemy certificates in .NET, React and software craftsmanship, strengthening my skills in clean code and best practices for full-stack development.</p>
             </article>
         </section>
     )
