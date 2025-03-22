@@ -13,10 +13,11 @@ export default function ProjectsSection() {
                     <div className="projects-card-content">
                         <h2 className="card-title">Hotel Booking</h2>
                         <div className="card-body">
-                        <p className="card-description">
-                            MVC Project with CRUD operations and external API calls with HTTP Client;
-                        </p>
-
+                            <div className="card-description-container">
+                                <p className="card-description">
+                                    MVC Project with CRUD operations and external API calls with HTTP Client;
+                                </p>
+                            </div>
                         <div className="button-area">
                             <a href="">Open App</a>
                             <a href="">View Code</a>
@@ -31,10 +32,12 @@ export default function ProjectsSection() {
                     <div className="projects-card-content">
                         <h2 className="card-title">Stock Exchange</h2>
                         <div className="card-body">
-                        <p className="card-description">
+                            <div className="card-description-container">
+
+                            <p className="card-description">
                             Group Project in .NET where four API's work together through a Gateway. The business logic is implemented through a custom ORM technology.
                         </p>
-
+                            </div>
                         <div className="button-area">
                             <a href="">Open App</a>
                             <a href="">View Code</a>
@@ -48,10 +51,12 @@ export default function ProjectsSection() {
                     </div>
                         <div className="projects-card-content">
                             <h2 className="card-title">GTR Car Wash</h2>
-                                <div className={"card-body"}>
-                                <p className="card-description">
-                                    Full-Stack React/ASP.NET Web Application about a car wash with service and self service.
-                                </p>
+                                <div className="card-body">
+                                    <div className="card-description-container">
+                                        <p className="card-description">
+                                            Full-Stack React/ASP.NET Web Application about a car wash with service and self service.
+                                        </p>
+                                    </div>
 
                                 <div className="button-area">
                                     <a href="">Open App</a>
@@ -68,9 +73,11 @@ export default function ProjectsSection() {
                         <div className="projects-card-content">
                             <h2 className="card-title">Board Game</h2>
                             <div className="card-body">
-                            <p className="card-description">
-                                Quiz themed JavaScript board game featuring questions about english works: "Hamlet" and "The Lord of The Rings".
-                            </p>
+                                <div className="card-description-container">
+                                    <p className="card-description">
+                                        Quiz themed JavaScript board game featuring questions about english works: "Hamlet" and "The Lord of The Rings".
+                                    </p>
+                                </div>
 
                             <div className="button-area">
                                 <a href="">Open App</a>
