@@ -185,8 +185,8 @@ input:focus + .label-line{
 
 input:focus + .label-line,
 input:not(:placeholder-shown) + .label-line {
-    height: 30px;
-    line-height: 30px;
+    height: 80px;
+    line-height: 80px;
     padding: 0 7px;
     z-index: 1111;
     pointer-events: none;
@@ -195,10 +195,10 @@ input:not(:placeholder-shown) + .label-line {
 
 .message-input:focus + .label-line,
 .message-input:not(:placeholder-shown) + .label-line {
-    height: 30px;
-    line-height: 30px;
+    height: 80px;
+    line-height: 80px;
     padding: 0 7px;
-    transform: translate(-9px, -1px) scale(0.68);
+    transform: translate(-9px, -50px) scale(0.68);
     z-index: 1111;
     pointer-events: none;
     user-select: none;
@@ -206,12 +206,12 @@ input:not(:placeholder-shown) + .label-line {
 
 .username-input:focus + .label-line,
 .username-input:not(:placeholder-shown) + .label-line {
-    transform: translate(-12px, -30px) scale(0.68);
+    transform: translate(-12px, -50px) scale(0.68);
 }
 
 .email-input:focus + .label-line,
 .email-input:not(:placeholder-shown) + .label-line {
-    transform: translate(-6px, -1px) scale(0.68);
+    transform: translate(-6px, -50px) scale(0.68);
 }
 
 
