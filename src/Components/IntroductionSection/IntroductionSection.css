@@ -15,6 +15,10 @@
     min-height: 10rem;
 }
 
+.name{
+    color: #EC4899;
+}
+
 .tech-stack-article .tech-stack, .introduction-article .introduction{
     font-weight: bold;
     font-size: 2rem;
@@ -25,7 +29,7 @@
 }
 
 .introduction-description span{
-    color: #6370e2;
+    color: #16F2B3;
     font-weight: 700;
     font-size: 1.5rem;
 }
@@ -61,12 +65,15 @@
 }
 
 .icon{
-    color: white;
+    color: #EC4899;
     font-size: 1.7rem;
     width: auto;
+    transition: transform 0.3s ease-in-out;
 }
 
 .icon:hover{
-    filter: brightness(0.7);
+    transform: scale(1.3);
 }
+
+
 

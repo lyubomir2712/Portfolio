@@ -12,6 +12,10 @@
     flex-direction: row;
 }
 
+.navbar-name{
+    color: #16F2B3;
+}
+
 .logo-name-container:hover .logo{
     transform: rotate(-25deg) scale(1.1);
 }

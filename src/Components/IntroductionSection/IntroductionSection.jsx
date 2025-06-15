@@ -13,7 +13,7 @@ export default function IntroductionSection() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1.75, ease: "easeOut" }}
                 >
-                    Hi, I'm Lyubo
+                    Hello, this is <span className="name">Lyubomir</span>
                 </motion.h3>
 
                 <motion.p
@@ -31,8 +31,8 @@ export default function IntroductionSection() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
                     >
-                        <a href="https://github.com/lyubomir2712">
-                            <i className="bi bi-github icon"></i>
+                        <a href="https://www.linkedin.com/in/lyubomir-georgiev-ab9116248/">
+                            <i className="bi bi-linkedin icon"></i>
                         </a>
                     </motion.div>
 
@@ -41,8 +41,9 @@ export default function IntroductionSection() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1.3, ease: "easeOut", delay: 0.4 }}
                     >
-                        <a href="https://www.linkedin.com/in/lyubomir-georgiev-ab9116248/">
-                            <i className="bi bi-linkedin icon"></i>
+
+                        <a href="https://github.com/lyubomir2712">
+                            <i className="bi bi-github icon"></i>
                         </a>
                     </motion.div>
                 </div>
