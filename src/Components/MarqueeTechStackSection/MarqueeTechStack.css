@@ -1,5 +1,4 @@
 .marquee-tech-stack-section {
-    height: 20rem;
     margin-top: 5rem;
     position: relative;
 }
@@ -35,7 +34,6 @@
 }
 
 
-
 .marquee-title::before {
     content: "";
     position: absolute;
@@ -45,6 +43,13 @@
     background: rgb(37, 31, 75);
     z-index: -1; /* place the line behind the box */
 }
+
+.marquee{
+    overflow: hidden;
+    width: 100%;
+}
+
+
 .marquee-wrapper {
     position: relative;
 }
@@ -66,14 +71,13 @@
     border: none;
 }
 
-.marquee {
-    overflow: hidden;
-    white-space: nowrap;
-}
+
 .marquee__inner {
-    display: inline-block;
+    display: flex;
     animation: marquee 20s linear infinite;
-    /* спри анимацията при hover върху какъвто и да е наследник */
+    overflow: visible;
+    width: max-content;
+    padding: 2rem;
 }
 .marquee__inner:hover {
     animation-play-state: paused;
@@ -85,10 +89,12 @@
     vertical-align: middle;
     transition: transform 0.5s ease;
     min-width: 9rem;
-    min-height: 8rem;
-    border-left: 1px solid #595959;
-    border-bottom: 1px solid #595959;
-    border-right: 1px solid #595959;
+    min-height: 6rem;
+    /*box-shadow: 0 0 20px rgba(136, 84, 192, 0.5);*/
+    /*border-left: 1px solid #595959;*/
+    /*border-bottom: 1px solid #595959;*/
+    /*border-right: 1px solid #595959;*/
+    border: 1px solid rgba(31, 34, 60, 1);
     border-radius: 5px;
     background-color: #14172c;
 }
