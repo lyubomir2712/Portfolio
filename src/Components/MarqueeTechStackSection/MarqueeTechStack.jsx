@@ -6,8 +6,8 @@ export default function MarqueeTechStack() {
         <section className={"marquee-tech-stack-section"}>
             <div className="division-line"></div>
             <br/><br/>
-            <div className={"marquee-title"}>
-                <h4 className={"skills-title"}>
+            <div className={"marquee-title-container"}>
+                <h4 className={"marquee-title"}>
                     Skills
                 </h4>
             </div>
