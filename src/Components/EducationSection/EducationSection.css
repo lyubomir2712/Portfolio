@@ -1,0 +1,77 @@
+.education-section {
+    margin-top: 5rem;
+    position: relative;
+}
+
+.division-line {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+            to right,
+            transparent 0%,
+            #7c3aed 50%,
+            transparent 100%
+    );
+    opacity: 1;
+    z-index: 2;
+    border: none;
+}
+
+.education-title-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(37, 31, 75);
+    width: 5.5rem;
+    height: 2.8rem;
+    margin: 0 auto;
+    border-radius: 5px;
+    font-weight: calc(550);
+}
+
+.education-title-container::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 18rem;
+    height: 2px;
+    background: rgb(37, 31, 75);
+    z-index: -1;
+}
+
+.education-background{
+    position: absolute;
+    top: 0;
+}
+
+.education-main{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    gap: 0;
+}
+
+.education-cell-one{
+    height: 20rem;
+    width: 30rem;
+
+}
+.education-cell-two{
+    height: 20rem;
+    width: 39rem;
+    display: flex;
+    align-items: center;
+}
+
+@keyframes rotateWave {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+svg g.wave {
+    animation: rotateWave 4s linear infinite;
+    transform-origin: center;
+}

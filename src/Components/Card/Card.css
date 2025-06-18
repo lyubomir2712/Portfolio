@@ -1,0 +1,54 @@
+.card {
+    height: 8rem;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    background-color: #14172c;
+    padding: 0;
+    border: 1px solid rgba(42, 46, 90, 1);
+    }
+
+.card-inner{
+    display: grid;
+    grid-template-columns: 0.15fr 0.8fr;
+    grid-template-rows: 0.3fr 0.4fr 0.1fr;
+    height: 100%;
+}
+
+.card-cell1 {
+    grid-column: 1 / span 2;
+    color: #16F2B3;
+}
+
+.card-cell2 {
+    grid-column: 1;
+    grid-row: 2 / span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-cell3 {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: left;
+    padding: 0;
+}
+
+.card-cell4 {
+    grid-column: 2;
+    grid-row: 3;
+    text-align: left;
+    font-weight: 500;
+}
+
+.card-svg{
+    position: absolute;
+    bottom: 0;
+    height: 11.8rem;
+    width: auto;
+    left: 0;
+
+}
