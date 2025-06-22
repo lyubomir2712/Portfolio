@@ -1,7 +1,7 @@
 import "./EducationSection.css"
-import './EducationSvg.jsx'
-import EducationSvg from "./EducationSvg.jsx";
 import Card from "../Card/Card.jsx";
+import LaptopHero from "../LaptopHero.jsx";
+import SvgEducation from "./SvgEducation.jsx";
 export default function EducationSection() {
     return (
         <section className="education-section">
@@ -55,7 +55,7 @@ export default function EducationSection() {
 
             <div className="education-main">
                 <div className={"education-cell-one"}>
-                    <EducationSvg/>
+                    <SvgEducation/>
                 </div>
                 <div className={"education-cell-two"}>
                     <Card date={"09/2022 - 01/2026"} title={"Software Engineering/Bachelor"} text={"University of Veliko Tarnovo"}/>

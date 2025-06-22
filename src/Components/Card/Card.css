@@ -6,7 +6,34 @@
     background-color: #14172c;
     padding: 0;
     border: 1px solid rgba(42, 46, 90, 1);
-    }
+    transition: border 0.3s ease-in-out;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-image: linear-gradient(
+            to right top,
+            #7b00ff 0%,
+            #9a00ff 30%,
+            #4b00ff 60%,
+            #2c00ff 100%
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
 
 .card-inner{
     display: grid;

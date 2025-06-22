@@ -3,6 +3,7 @@ import CardIcon from "./CardIcon.jsx";
 
 export default function Card({date, title, text}) {
     return (
+        <>
         <div className="card">
             <svg className="card-svg" xmlns="http://www.w3.org/2000/svg" width="1170" height="461" viewBox="0 0 1170 461" fill="none">
                 <g opacity="0.22" filter="url(#filter0_f_94_12716)">
@@ -17,7 +18,6 @@ export default function Card({date, title, text}) {
                 </defs>
             </svg>
 
-
             <div className="card-inner">
                 <div className="card-dates card-cell1">{date}</div>
 
@@ -26,5 +26,6 @@ export default function Card({date, title, text}) {
                 <div className="card-text card-cell4">{text}</div>
             </div>
         </div>
+        </>
     )
 }

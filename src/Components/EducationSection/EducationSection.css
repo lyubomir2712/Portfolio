@@ -71,7 +71,16 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-svg g.wave {
-    animation: rotateWave 4s linear infinite;
+.education-svg {
     transform-origin: center;
+    content-visibility: visible !important;
+    transform: translate3d(0px, 0px, 0px)
+}
+
+.education-svg g{
+    transform: matrix(1,0,0,1,640,400);
+}
+
+.education-svg path{
+
 }
