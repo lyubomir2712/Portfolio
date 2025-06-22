@@ -1,16 +1,16 @@
 import "./EducationSection.css"
 import Card from "../Card/Card.jsx";
-import LaptopHero from "../LaptopHero.jsx";
+import LaptopHero from "../ExperienceSection/LaptopHero.jsx";
 import SvgEducation from "./SvgEducation.jsx";
+import Title from "../Title/Title.jsx";
+import DivisionLine from "../DivisionLine/DivisionLine.jsx";
 export default function EducationSection() {
     return (
         <section className="education-section">
-            <div className="division-line"></div>
+            <DivisionLine />
             <br/> <br/>
-            <div className="education-title-container">
-                <h4 className="education-title">Education</h4>
-            </div>
 
+            <Title title={"Education"}/>
 
             <svg className={"education-background"} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 147.552 1589.4843276036402 647.448" style={{ maxHeight: "500px" }} width="1589.4843276036402" height="647.448">
                 <mask height="795" width="1572" y="0" x="0" maskUnits="userSpaceOnUse" style={{maskType:"alpha"}} id="mask0_340_660">

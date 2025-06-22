@@ -7,9 +7,9 @@ import ContactSection from "./Components/ContactSection/ContactSection.jsx";
 import {Footer} from "./Components/Footer/Footer.jsx";
 import MarqueeTechStack from "./Components/MarqueeTechStackSection/MarqueeTechStack.jsx";
 import EducationSection from "./Components/EducationSection/EducationSection.jsx";
+import ExperienceSection from "./Components/ExperienceSection/ExperienceSection.jsx";
 
 function App() {
-  // const [count, setCount] = useState(0)
 
   return (
     <>
@@ -18,6 +18,7 @@ function App() {
         <CertificationSection/>
         <ProjectsSection/>
         <ContactSection/>
+        <ExperienceSection/>
         <MarqueeTechStack/>
         <EducationSection/>
         <Footer/>

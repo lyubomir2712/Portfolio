@@ -1,0 +1,26 @@
+.experience-section{
+    margin-top: 5rem;
+    position: relative;
+    display: block;
+}
+
+.experience-section-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
+    gap: 0;
+    align-items: center;
+}
+
+.experience-section-cell1{
+}
+
+.experience-section-cell2{
+
+}
+
+.experience-svg-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+}

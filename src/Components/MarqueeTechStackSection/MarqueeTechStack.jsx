@@ -1,16 +1,14 @@
 import './MarqueeTechStack.css';
+import Title from "../Title/Title.jsx";
+import DivisionLine from "../DivisionLine/DivisionLine.jsx";
 
 
 export default function MarqueeTechStack() {
     return (
         <section className={"marquee-tech-stack-section"}>
-            <div className="division-line"></div>
+            <DivisionLine />
             <br/><br/>
-            <div className={"marquee-title-container"}>
-                <h4 className={"marquee-title"}>
-                    Skills
-                </h4>
-            </div>
+            <Title title={"Skills"}/>
             <br/><br/>
 
             <div className={"marquee"}>

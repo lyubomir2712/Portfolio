@@ -1,0 +1,23 @@
+.title-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(37, 31, 75);
+    width: 5.5rem;
+    height: 2.8rem;
+    margin: 0 auto;
+    border-radius: 5px;
+    font-weight: calc(550);
+}
+
+.title-container::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 18rem;
+    height: 2px;
+    background: rgb(37, 31, 75);
+    z-index: -1;
+}
