@@ -17,10 +17,10 @@ function App() {
         <IntroductionSection/>
         <CertificationSection/>
         <ProjectsSection/>
-        <ContactSection/>
         <ExperienceSection/>
         <MarqueeTechStack/>
         <EducationSection/>
+        <ContactSection/>
         <Footer/>
     </>
   )
