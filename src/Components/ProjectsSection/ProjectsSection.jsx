@@ -1,12 +1,16 @@
 import './ProjectsSection.css';
 import {motion} from 'framer-motion';
+import DivisionLine from "../DivisionLine/DivisionLine.jsx";
+import Title from "../Title/Title.jsx";
 
 export default function ProjectsSection() {
     return (
         <section id="projects-section" className="projects-section">
-            <h2 className="projects-title">Projects</h2>
+            <br/><br/>
+            <DivisionLine/>
 
-
+            <Title title={"Projects"}/>
+            <br/><br/>
             <motion.div
                 className="projects-container"
                 initial={{ opacity: 0, y: 50 }}
@@ -31,8 +35,8 @@ export default function ProjectsSection() {
                                 </p>
                             </div>
                             <div className="button-area">
-                                <a href="">Open App</a>
-                                <a href="">View Code</a>
+                                <a className="projects-card-button" href="">Open App</a>
+                                <a className="projects-card-button" href="">View Code</a>
                             </div>
                         </div>
                     </div>
@@ -56,8 +60,8 @@ export default function ProjectsSection() {
                                 </p>
                             </div>
                             <div className="button-area">
-                                <a href="">Open App</a>
-                                <a href="">View Code</a>
+                                <a className="projects-card-button" href="">Open App</a>
+                                <a className="projects-card-button" href="">View Code</a>
                             </div>
                         </div>
                     </div>
@@ -81,8 +85,8 @@ export default function ProjectsSection() {
                                 </p>
                             </div>
                             <div className="button-area">
-                                <a href="">Open App</a>
-                                <a href="">View Code</a>
+                                <a className="projects-card-button" href="">Open App</a>
+                                <a className="projects-card-button" href="">View Code</a>
                             </div>
                         </div>
                     </div>
@@ -106,8 +110,8 @@ export default function ProjectsSection() {
                                 </p>
                             </div>
                             <div className="button-area">
-                                <a href="">Open App</a>
-                                <a href="">View Code</a>
+                                <a className="projects-card-button" href="">Open App</a>
+                                <a className="projects-card-button" href="">View Code</a>
                             </div>
                         </div>
                     </div>

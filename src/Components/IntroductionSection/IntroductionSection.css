@@ -1,18 +1,22 @@
 .introduction-section{
     margin: 4rem auto 0 auto;
     display: flex;
-    justify-content: center;
-    width: 70%;
+    justify-content: stretch;
+    width: 100%;
+    background-color: red;
+    height: 35rem;
 }
 .introduction-article{
     height: 20rem;
     width: 32rem;
     min-height: 10rem;
+    background-color: green;
 }
 .tech-stack-article{
     height: 20rem;
-    width: 28rem;
+    width: 50rem;
     min-height: 10rem;
+    background-color: yellow;
 }
 
 .name{
