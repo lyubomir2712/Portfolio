@@ -8,6 +8,7 @@ import {Footer} from "./Components/Footer/Footer.jsx";
 import MarqueeTechStack from "./Components/MarqueeTechStackSection/MarqueeTechStack.jsx";
 import EducationSection from "./Components/EducationSection/EducationSection.jsx";
 import ExperienceSection from "./Components/ExperienceSection/ExperienceSection.jsx";
+import AboutMeSection from "./Components/AboutMeSection/AboutMeSection.jsx";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
     <>
         <Navbar/>
         <IntroductionSection/>
+        <AboutMeSection/>
         <CertificationSection/>
         <ProjectsSection/>
         <ExperienceSection/>

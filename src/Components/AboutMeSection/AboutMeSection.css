@@ -1,0 +1,10 @@
+.about-me-profile span::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    width: 90px; /* adjust as needed */
+    height: 2px;
+    background-color: #1a1443; /* or any other color */
+}

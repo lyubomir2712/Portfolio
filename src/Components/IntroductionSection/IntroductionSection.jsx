@@ -59,7 +59,7 @@ export default function IntroductionSection() {
                 {/*    Download CV*/}
                 {/*</motion.a>*/}
 
-                <div className="introduction-button-group flex-row justify-center items-center ">
+                <div className="introduction-button-group flex-row justify-center items-center">
                 <a className="w-50 block bg-gradient-to-r to-pink-500 from-violet-600 p-[1px] rounded-full transition-all duration-300 hover:from-pink-500 hover:to-violet-600"
                    href="#contact">
                     <button
