@@ -20,18 +20,18 @@ export default function GreetingsCodeComponent() {
                     className="text-gray-400"></span></div><div>
                 <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
                 <span className="text-gray-400">'</span>
-                <span className="text-amber-300">Nelo Labhart</span>
+                <span className="text-amber-300">Lyubomir Georgiev</span>
                 <span className="text-gray-400">',</span></div><div>
                 <span className="ml-4 lg:ml-8 mr-2 text-white">Main stack:</span>
                 <span className="text-gray-400">['</span><span className="text-amber-300">Frontend</span
-            ><span className="text-gray-400">', '</span><span className="text-amber-300">Web3 Blockchain</span>
+            ><span className="text-gray-400">', '</span><span className="text-amber-300">Backend</span>
                 <span className="text-gray-400">'],</span></div><div className="ml-4 lg:ml-8 mr-2"><span className=" text-white">skills:</span>
-                <span className="text-gray-400">['</span><span className="text-amber-300">React</span><span className="text-gray-400">', '</span><span className="text-amber-300">NextJS</span>
-                <span className="text-gray-400">', '</span><span className="text-amber-300">Redux</span><span className="text-gray-400">', '</span><span className="text-amber-300">Express</span>
-                <span className="text-gray-400">', '</span><span className="text-amber-300">NestJS</span><span className="text-gray-400">', '</span><span className="text-amber-300">MySql</span>
-                <span className="text-gray-400">', '</span><span className="text-amber-300">MongoDB</span><span className="text-gray-400">', '</span><span className="text-amber-300">Docker</span>
-                <span className="text-gray-400">', '</span><span className="text-amber-300">AWS</span><span className="text-gray-400">', '</span><span className="text-amber-300">EVM</span>
-                <span className="text-gray-400">', '</span><span className="text-amber-300">Solana</span><span className="text-gray-400">', '</span><span className="text-amber-300">TON</span>
+                <span className="text-gray-400">['</span><span className="text-amber-300">React</span><span className="text-gray-400">', '</span><span className="text-amber-300">JavaScript</span>
+                <span className="text-gray-400">', '</span><span className="text-amber-300">ASP.NET</span><span className="text-gray-400">', '</span><span className="text-amber-300">HTML</span>
+                <span className="text-gray-400">', '</span><span className="text-amber-300">TypeScript</span><span className="text-gray-400">', '</span><span className="text-amber-300">CSS</span>
+                <span className="text-gray-400">', '</span><span className="text-amber-300">MSSQL</span><span className="text-gray-400">', '</span><span className="text-amber-300">Docker</span>
+                <span className="text-gray-400">', '</span><span className="text-amber-300">Azure</span><span className="text-gray-400">', '</span><span className="text-amber-300">RabbitMQ</span>
+                <span className="text-gray-400">', '</span><span className="text-amber-300">JavaScript</span><span className="text-gray-400">', '</span><span className="text-amber-300">Git</span>
                 <span className="text-gray-400">'],</span></div><div><span className="ml-4 lg:ml-8 mr-2 text-white">hardWorker:</span><span className="text-orange-400">true</span>
                 <span className="text-gray-400">,</span></div><div><span className="ml-4 lg:ml-8 mr-2 text-white">quickLearner:</span><span className="text-orange-400">true</span>
                 <span className="text-gray-400">,</span></div><div><span className="ml-4 lg:ml-8 mr-2 text-white">problemSolver:</span><span className="text-orange-400">true</span>

@@ -7,7 +7,7 @@
     height: 35rem;
 }
 .introduction-article{
-    height: 20rem;
+    height: 30rem;
     width: 32rem;
     min-height: 10rem;
     background-color: green;
@@ -23,19 +23,22 @@
     color: #EC4899;
 }
 
-.tech-stack-article .tech-stack, .introduction-article .introduction{
-    font-weight: bold;
-    font-size: 2rem;
+.introduction{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    line-height: 3rem;
 }
 
 .introduction-description{
-    font-size: 1.25rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3rem;
 }
 
 .introduction-description span{
     color: #16F2B3;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 
 .introduction-socials{
@@ -50,34 +53,15 @@
     text-align: left;
 }
 
-.cv-downloader{
-    text-align: center;
-    padding: 0.9rem;
-    width: 8rem;
-    background-color: #6370e2;
-    color: black;
-    display: block;
-    border-radius: 0.4rem;
-    margin-top: 2rem;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-.cv-downloader:hover {
-    filter: brightness(1.1);
-}
-
 .icon{
     color: #EC4899;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     width: auto;
     transition: transform 0.3s ease-in-out;
 }
 
-.icon:hover{
-    transform: scale(1.3);
-}
+
+
 
 
 
