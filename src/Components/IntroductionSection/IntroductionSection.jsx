@@ -4,6 +4,28 @@ import Typewriter from "./TypeWriter.jsx";
 import {motion} from 'framer-motion';
 import GreetingsCodeComponent from "./GreetingsCodeComponent.jsx";
 
+const iconVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: (custom) => ({
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      opacity: { duration: 1.2, ease: "easeOut", delay: custom },
+      y:       { duration: 1.2, ease: "easeOut", delay: custom },
+      scale:   { duration: 0.3, ease: "easeOut" },
+    },
+  }),
+  hover: {
+    scale: 1.3,
+    transition: { duration: 0.3, ease: "easeOut" },
+  },
+  tap: {
+    scale: 1.3,
+    transition: { duration: 0.5, ease: "easeOut" },
+  },
+};
+
 export default function IntroductionSection() {
     return (
         <section id="introduction-section" className={"introduction-section"}>
@@ -28,10 +50,12 @@ export default function IntroductionSection() {
 
                 <div className={"introduction-socials"}>
                     <motion.div
-                        initial={{opacity: 0, y: 20}}
-                        animate={{opacity: 1, y: 0}}
-                        transition={{duration: 1.2, ease: "easeOut", delay: 0.2}}
-                        whileHover={{ scale: 1.3, transition: { duration: 0.5 } }}
+                        variants={iconVariants}
+                        initial="hidden"
+                        animate="visible"
+                        custom={0.2}
+                        whileHover="hover"
+                        whileTap="tap"
                     >
                         <a href="https://www.linkedin.com/in/lyubomir-georgiev-ab9116248/">
                             <i className="bi bi-linkedin icon"></i>
@@ -39,10 +63,12 @@ export default function IntroductionSection() {
                     </motion.div>
 
                     <motion.div
-                        initial={{opacity: 0, y: 20}}
-                        animate={{opacity: 1, y: 0}}
-                        transition={{duration: 1.3, ease: "easeOut", delay: 0.4}}
-                        whileHover={{ scale: 1.3, transition: { duration: 0.5 } }}
+                        variants={iconVariants}
+                        initial="hidden"
+                        animate="visible"
+                        custom={0.4}
+                        whileHover="hover"
+                        whileTap="tap"
                     >
 
                         <a href="https://github.com/lyubomir2712">
@@ -80,4 +106,3 @@ export default function IntroductionSection() {
             </section>
     )
 }
-
