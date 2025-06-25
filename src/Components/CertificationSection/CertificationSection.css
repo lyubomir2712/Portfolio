@@ -1,4 +1,8 @@
-.certification-section{
+.certification-section {
+    position: relative;
+    margin-top: 5rem;
+}
+.certification-section-container{
     display: flex;
     flex-direction: row;
     width: 75.82%;

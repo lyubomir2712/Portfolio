@@ -1,5 +1,7 @@
 import './CertificationSection.css';
 import { motion } from 'framer-motion';
+import DivisionLine from "../DivisionLine/DivisionLine.jsx";
+import Title from "../Title/Title.jsx";
 
 const containerVariants = {
     hidden: { opacity: 0 },
@@ -19,7 +21,13 @@ const childVariants = {
 export default function CertificationSection() {
     return (
         <section id="certification-section" className="certification-section">
-            <article className="certificates-article">
+            <DivisionLine/>
+            <br/>
+            <br/>
+            <Title title={"Certifications"} />
+            <div className="certification-section-container">
+                <article className="certificates-article">
+
                 <motion.div
                     className="certificates-container"
                     variants={containerVariants}
@@ -87,6 +95,7 @@ export default function CertificationSection() {
                     </p>
                 </motion.div>
             </article>
+            </div>
         </section>
     );
 }
