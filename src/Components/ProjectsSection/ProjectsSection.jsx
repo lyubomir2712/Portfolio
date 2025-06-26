@@ -81,7 +81,7 @@ export default function ProjectsSection() {
                         <div className="card-body">
                             <div className="card-description-container">
                                 <p className="card-description">
-                                    Full-Stack React/ASP.NET Web Application about a car wash with service and self service.
+                                    Full-Stack React/ASP.NET Web Application about a car wash with service.
                                 </p>
                             </div>
                             <div className="button-area">
