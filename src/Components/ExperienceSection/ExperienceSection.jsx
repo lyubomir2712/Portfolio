@@ -7,7 +7,7 @@ import ExperienceBackgroundSvg from "./ExperienceBackgroundSvg.jsx";
 
 export default function ExperienceSection() {
     return (
-        <section className="experience-section">
+        <section id={"experience-section"} className="experience-section">
             <ExperienceBackgroundSvg/>
                 <DivisionLine />
             <br/><br/>

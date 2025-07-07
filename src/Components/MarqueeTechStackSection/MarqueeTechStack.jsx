@@ -5,7 +5,7 @@ import DivisionLine from "../DivisionLine/DivisionLine.jsx";
 
 export default function MarqueeTechStack() {
     return (
-        <section className={"marquee-tech-stack-section"}>
+        <section id={"skills-section"} className={"marquee-tech-stack-section"}>
             <DivisionLine />
             <br/><br/>
             <Title title={"Skills"}/>
