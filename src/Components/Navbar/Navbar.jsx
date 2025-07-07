@@ -8,10 +8,10 @@ import './Navbar.css';
 export default function Navbar() {
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar className={"navbar"} position="static" sx={{ width: '100%', backgroundColor: '#14172c', paddingLeft: '0', marginTop: '0'}}>
+            <AppBar className={"navbar"} position="sticky" sx={{ width: '100%', backgroundColor: '#14172c', paddingLeft: '0', marginTop: '0'}}>
                 <Toolbar sx={{padding: 0}}>
                     <div className="logo-name-container"><i className="bi bi-code-slash logo"></i>
-                    <h3 className={"navbar-name"}>Lyubomir Georgiev</h3>
+                    <span className={"navbar-name"}>Lyubomir Georgiev</span>
                     </div>
                     <Typography variant="h6" component="div" sx={{flexGrow: 2}}>
                     </Typography>

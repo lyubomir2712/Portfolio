@@ -5,15 +5,22 @@
     -webkit-text-stroke: 1px white;
     transition: transform 0.4s ease;
     align-self: center;
+    position: absolute;
+    left: 0;
+    top: 25%;
 }
 
 .logo-name-container{
-    display: flex;
-    flex-direction: row;
+    position: relative;
+    width: 11rem;
+    height: 3.75rem;
 }
 
 .navbar-name{
     color: #16F2B3;
+    position: absolute;
+    right: 0;
+    top: 33%;
 }
 
 .logo-name-container:hover .logo{
