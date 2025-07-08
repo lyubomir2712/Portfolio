@@ -35,8 +35,7 @@ export default function ProjectsSection() {
                                 </p>
                             </div>
                             <div className="button-area">
-                                <a className="projects-card-button" href="">Open App</a>
-                                <a className="projects-card-button" href="">View Code</a>
+                                <a className="projects-card-button" href="https://github.com/lyubomir2712/Hotel_Booking">View Code</a>
                             </div>
                         </div>
                     </div>
@@ -60,8 +59,7 @@ export default function ProjectsSection() {
                                 </p>
                             </div>
                             <div className="button-area">
-                                <a className="projects-card-button" href="">Open App</a>
-                                <a className="projects-card-button" href="">View Code</a>
+                                <a className="projects-card-button" href="https://github.com/MrArthur0507/StockAPI">View Code</a>
                             </div>
                         </div>
                     </div>
@@ -85,7 +83,6 @@ export default function ProjectsSection() {
                                 </p>
                             </div>
                             <div className="button-area">
-                                <a className="projects-card-button" href="">Open App</a>
                                 <a className="projects-card-button" href="">View Code</a>
                             </div>
                         </div>
@@ -111,7 +108,7 @@ export default function ProjectsSection() {
                             </div>
                             <div className="button-area">
                                 <a className="projects-card-button" href="">Open App</a>
-                                <a className="projects-card-button" href="">View Code</a>
+                                <a className="projects-card-button" href="https://github.com/lyubomir2712/English_Literature_Board_Game">View Code</a>
                             </div>
                         </div>
                     </div>

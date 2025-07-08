@@ -13,10 +13,12 @@
 }
 
 .experience-section-cell1{
+    height: 27rem;
+    width: auto;
 }
 
 .experience-section-cell2{
-
+    width: 40rem;
 }
 
 .experience-svg-background{
