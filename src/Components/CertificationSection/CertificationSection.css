@@ -1,6 +1,7 @@
 .certification-section {
     position: relative;
-    margin-top: 5rem;
+    margin: 5rem auto 0 auto;
+    width: 70%;
 }
 .certification-section-container{
     display: flex;
