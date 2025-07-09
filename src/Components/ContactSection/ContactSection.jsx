@@ -25,7 +25,6 @@ export default function ContactSection() {
                         </div>
 
                     </div>
-                    {/*<button className="contact-btn" type="submit">Send</button>*/}
                     <button
                         className="flex mt-5 mx-auto ml-auto items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-5 md:px-12 py-2.5 md:py-3 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
                         role="button"><span className="flex items-center gap-1">Send Message<svg stroke="currentColor"
@@ -43,7 +42,15 @@ export default function ContactSection() {
                 </form>
                 </div>
 
-                <div className="contacts-container">
+
+                <div className="contacts-cell2 bg-amber-200" >
+                    <span
+                        className="bg-[#1a1443] w-38 h-10 inline-block text-white rotate-90 p-2 px-3 text-xl rounded-md contacts-mini-title">
+                                CONTACTS
+                    </span>
+                    <div className="contacts-buttons-container pl-[48%] w-[100%] bg-purple-600">
+                        <div className="email-location-container gap-5 flex flex-col">
+
                     <p className="text-sm md:text-xl flex items-center gap-3">
                         <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24"
                              className="bg-[#8b98a5] p-2 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
@@ -68,32 +75,8 @@ export default function ContactSection() {
                             </g>
                         </svg>
                         <span>Sofia, Bulgaria</span></p>
-
-                    <div className="mt-8 lg:mt-16 flex items-center gap-5 lg:gap-10"><a target="_blank"
-                                                                                        href="https://github.com/0xopsdev">
-                        <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512"
-                             className="bg-[#8b98a5] p-3 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
-                             height="48" width="48" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9 1.4.3 2.6.4 3.8.4 8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1-8.4 1.9-15.9 2.7-22.6 2.7-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1 10.5 0 20-3.4 25.6-6 2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8 0 0 1.6-.5 5-.5 8.1 0 26.4 3.1 56.6 24.1 17.9-5.1 37-7.6 56.1-7.7 19 .1 38.2 2.6 56.1 7.7 30.2-21 48.5-24.1 56.6-24.1 3.4 0 5 .5 5 .5 12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5 1.2 0 2.6-.1 4-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"></path>
-                        </svg>
-                    </a><a target="_blank" href="https://t.me/its0xopsdev">
-                        <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 496 512"
-                             className="bg-[#8b98a5] p-3 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
-                             height="48" width="48" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"></path>
-                        </svg>
-                    </a><a target="_blank" href="https://x.com/0xopsdev">
-                        <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512"
-                             className="bg-[#8b98a5] p-3 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
-                             height="48" width="48" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
-                        </svg>
-                    </a></div>
-
-                    <span className="bg-[#1a1443] w-fit text-white rotate-90 p-2 px-5 text-xl rounded-md">CONTACT</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
