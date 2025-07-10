@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Card from "../Card/Card.jsx";
 import DivisionLine from "../DivisionLine/DivisionLine.jsx";
 import Title from "../Title/Title.jsx";
@@ -14,14 +15,30 @@ export default function ExperienceSection() {
             <Title title={"Experience"}/>
             <br/><br/>
             <div className="experience-section-container">
-                <div className="experience-section-cell1">
-                    <LaptopHero/>
-                </div>
+                <motion.div className="experience-section-cell1"
+                        initial={{ opacity: 0, x: -30 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 1.75 }}
+                    >
+                        <LaptopHero/>
+                </motion.div>
 
                 <div className="experience-section-cell2">
-                <Card date={"07/2022 - 07/2024"} title={"System and Network Administrator"} text={"\"Здраве Консорциум 2014\" ДЗЗД "} />
+                    <motion.div
+                        initial={{ opacity: 0, x: 60 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 1, delay: 0.2 }}
+                    >
+                        <Card date={"07/2022 - 07/2024"} title={"System and Network Administrator"} text={"\"Здраве Консорциум 2014\" ДЗЗД "} />
+                    </motion.div>
                     <br/>
-                <Card date={"07/2024 - 01/2025"} title={"Full-Stack React .NET Developer"} text={"St. Cyril and St. Methodius University of Veliko Tarnovo\n"}/>
+                    <motion.div
+                        initial={{ opacity: 0, x: 60 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 1, delay: 0.5 }}
+                    >
+                        <Card date={"07/2024 - 01/2025"} title={"Full-Stack React .NET Developer"} text={"St. Cyril and St. Methodius University of Veliko Tarnovo\n"}/>
+                    </motion.div>
                 </div>
             </div>
         </section>
