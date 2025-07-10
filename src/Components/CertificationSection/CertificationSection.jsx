@@ -47,7 +47,7 @@ export default function CertificationSection() {
                             y: { duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 },
                         }}
                     >
-                        <img className="certificate-three certificate" src="../../../public/certificate.jpg" alt="Certificate Three" />
+                        <img className="certificate-three certificate" src="../../../public/EntityFramework%20certificate.png" alt="Certificate Three" />
                     </motion.div>
 
                     <motion.div
@@ -62,7 +62,7 @@ export default function CertificationSection() {
                             y: { duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 },
                         }}
                     >
-                        <img className="certificate-two certificate" src="../../../public/certificate.jpg" alt="Certificate Two" />
+                        <img className="certificate-two certificate" src="../../../public/API%20certificate.png" alt="Certificate Two" />
                     </motion.div>
 
                     <motion.div
@@ -77,7 +77,7 @@ export default function CertificationSection() {
                             y: { duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 },
                         }}
                     >
-                        <img className="certificate-one certificate" src="../../../public/certificate.jpg" alt="Certificate One" />
+                        <img className="certificate-one certificate" src="../../../public/MVC%20certificate.png" alt="Certificate One" />
                     </motion.div>
                 </motion.div>
             </article>
