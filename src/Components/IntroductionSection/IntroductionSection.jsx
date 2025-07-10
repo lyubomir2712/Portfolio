@@ -75,6 +75,21 @@ export default function IntroductionSection() {
                             <i className="bi bi-github icon"></i>
                         </a>
                     </motion.div>
+
+                    <motion.div
+                        variants={iconVariants}
+                        initial="hidden"
+                        animate="visible"
+                        custom={0.6}
+                        whileHover="hover"
+                        whileTap="tap"
+                    >
+
+                        <a href="https://x.com/0xGeorgiev"><i className="bi bi-twitter-x"></i></a>
+                    </motion.div>
+
+
+
                 </div>
 
 

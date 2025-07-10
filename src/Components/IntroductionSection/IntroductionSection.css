@@ -58,6 +58,21 @@
 }
 
 
+.introduction-section .bi-linkedin, .introduction-section .bi-github, .introduction-section .bi-twitter-x {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #EC4899;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.3rem;
+    transition: transform 0.7s ease, background-color 0.3s ease;
+}
+
+
 
 
 
