@@ -10,6 +10,8 @@
     margin: 0 auto;
     border-radius: 5px;
     font-weight: calc(550);
+    box-shadow: 0 0 130px 10px rgba(255, 255, 255, 0.4);
+
 }
 
 .title-container::before {
