@@ -17,11 +17,11 @@ const iconVariants = {
     },
   }),
   hover: {
-    scale: 1.3,
+    scale: 1.2,
     transition: { duration: 0.3, ease: "easeOut" },
   },
   tap: {
-    scale: 1.3,
+    scale: 1.2,
     transition: { duration: 0.5, ease: "easeOut" },
   },
 };
