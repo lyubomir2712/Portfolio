@@ -1,4 +1,6 @@
 import './ContactSection.css'
+import GithubIcon from "./GithubIcon.jsx";
+import LinkedInIcon from "./LinkedInIcon.jsx";
 
 export default function ContactSection() {
     return (
@@ -25,9 +27,9 @@ export default function ContactSection() {
                         </div>
 
                     </div>
-                    <button
+                    <button1
                         className="flex mt-5 mx-auto ml-auto items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-5 md:px-12 py-2.5 md:py-3 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
-                        role="button"><span className="flex items-center gap-1">Send Message<svg stroke="currentColor"
+                        role="button"><span className="flex items-center gap-1 cursor-pointer">Send Message<svg stroke="currentColor"
                                                                                                  fill="none"
                                                                                                  strokeWidth="2"
                                                                                                  viewBox="0 0 24 24"
@@ -38,17 +40,25 @@ export default function ContactSection() {
                         stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
                         d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5"></path><path
                         d="M3 6l9 6l9 -6"></path><path d="M15 18h6"></path><path
-                        d="M18 15l3 3l-3 3"></path></svg></span></button>
+                        d="M18 15l3 3l-3 3"></path></svg></span></button1>
                 </form>
                 </div>
 
 
-                <div className="contacts-cell2 bg-amber-200" >
-                    <span
-                        className="bg-[#1a1443] w-38 h-10 inline-block text-white rotate-90 p-2 px-3 text-xl rounded-md contacts-mini-title">
+                <div className="contacts-cell2" >
+                    <div className="contacts-mini-title-container">
+                        <div
+                            className="bg-[#1a1443] w-38 h-10 inline-block text-white rotate-90 p-2 px-3 text-xl rounded-md contacts-mini-title">
                                 CONTACTS
-                    </span>
-                    <div className="contacts-buttons-container pl-[48%] w-[100%] bg-purple-600">
+
+                        </div>
+                        <div className="flex flex-col gap-5">
+                            <a href="https://www.linkedin.com/in/lyubomir-georgiev-ab9116248/"><i className="bi bi-linkedin"></i></a>
+                            <a href="https://github.com/lyubomir2712"><i className="bi bi-github"></i></a>
+                            <a href="https://x.com/0xGeorgiev"><i className="bi bi-twitter-x"></i></a>
+                        </div>
+                    </div>
+                    <div className="contacts-buttons-container pl-[45%] w-[100%] ">
                         <div className="email-location-container gap-5 flex flex-col">
 
                     <p className="text-sm md:text-xl flex items-center gap-3">
