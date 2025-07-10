@@ -1,5 +1,5 @@
 import './Footer.css'
-export function Footer() {
+export default function Footer() {
     return (
         <footer className="footer">
             <p className="footer-description">© Copyright - Lyubomir Georgiev Georgiev | All Rights Reserved</p>

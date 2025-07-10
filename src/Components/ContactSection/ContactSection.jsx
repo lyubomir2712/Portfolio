@@ -27,7 +27,7 @@ export default function ContactSection() {
                         </div>
 
                     </div>
-                    <button1
+                    <button
                         className="flex mt-5 mx-auto ml-auto items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-5 md:px-12 py-2.5 md:py-3 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
                         role="button"><span className="flex items-center gap-1 cursor-pointer">Send Message<svg stroke="currentColor"
                                                                                                  fill="none"
@@ -40,7 +40,7 @@ export default function ContactSection() {
                         stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
                         d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5"></path><path
                         d="M3 6l9 6l9 -6"></path><path d="M15 18h6"></path><path
-                        d="M18 15l3 3l-3 3"></path></svg></span></button1>
+                        d="M18 15l3 3l-3 3"></path></svg></span></button>
                 </form>
                 </div>
 

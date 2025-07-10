@@ -4,11 +4,12 @@ import IntroductionSection from "./Components/IntroductionSection/IntroductionSe
 import CertificationSection from "./Components/CertificationSection/CertificationSection.jsx";
 import ProjectsSection from "./Components/ProjectsSection/ProjectsSection.jsx";
 import ContactSection from "./Components/ContactSection/ContactSection.jsx";
-import {Footer} from "./Components/Footer/Footer.jsx";
+import Footer from "./Components/Footer/Footer.jsx";
 import MarqueeTechStack from "./Components/MarqueeTechStackSection/MarqueeTechStack.jsx";
 import EducationSection from "./Components/EducationSection/EducationSection.jsx";
 import ExperienceSection from "./Components/ExperienceSection/ExperienceSection.jsx";
 import AboutMeSection from "./Components/AboutMeSection/AboutMeSection.jsx";
+import ScrollTopButton from "./Components/ScrollTopButton/ScrollTopButton.jsx";
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
         <EducationSection/>
         <ContactSection/>
         <Footer/>
+        <ScrollTopButton/>
     </>
   )
 }
