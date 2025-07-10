@@ -8,7 +8,7 @@ import './Navbar.css';
 export default function Navbar() {
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar className={"navbar"} position="sticky" sx={{ width: '100%', backgroundColor: '#14172c', paddingLeft: '0', marginTop: '0'}}>
+            <AppBar className={"navbar"} position="sticky" sx={{ width: '100%', backgroundColor: 'transparent', paddingLeft: '0', marginTop: '0', border: "none", boxShadow: 'none'}}>
                 <Toolbar sx={{padding: 0}}>
                     <div className="logo-name-container"><i className="bi bi-code-slash logo"></i>
                     <span className={"navbar-name"}>Lyubomir Georgiev</span>
