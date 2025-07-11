@@ -2,16 +2,20 @@ import './ContactSection.css'
 import GithubIcon from "./GithubIcon.jsx";
 import LinkedInIcon from "./LinkedInIcon.jsx";
 import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
 
 export default function ContactSection() {
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
     return (
-        <section id="contact-section" className="contact-section">
+        <section id="contact-section" className="contact-section" ref={ref}>
             <h2 className="contact-title">Contact Me</h2>
             <div className="contact-container">
                 <motion.div
                     className="contact-cell1"
-                    initial={{ opacity: 0, x: -30 }}
-                    animate={{ opacity: 1, x: 0 }}
+                    animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
                     transition={{ duration: 1.75 }}
                 >
                 <form className="contact-form">
@@ -55,8 +59,7 @@ export default function ContactSection() {
                     <div className="contacts-mini-title-container">
                         <motion.div
                             className="bg-[#1a1443] w-38 h-10 inline-block text-white rotate-90 p-2 px-3 text-xl rounded-md contacts-mini-title"
-                            initial={{ opacity: 0, y: -20 }}
-                            animate={{ opacity: 1, y: 0 }}
+                            animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
                             transition={{ duration: 1 }}
                         >
                             CONTACTS
@@ -64,24 +67,21 @@ export default function ContactSection() {
                         <div className="flex flex-col gap-5">
                             <motion.a
                                 href="https://www.linkedin.com/in/lyubomir-georgiev-ab9116248/"
-                                initial={{ opacity: 0, x: 20 }}
-                                animate={{ opacity: 1, x: 0 }}
+                                animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
                                 transition={{ duration: 0.8, delay: 0.2 }}
                             >
                                 <i className="bi bi-linkedin"></i>
                             </motion.a>
                             <motion.a
                                 href="https://github.com/lyubomir2712"
-                                initial={{ opacity: 0, x: 20 }}
-                                animate={{ opacity: 1, x: 0 }}
+                                animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
                                 transition={{ duration: 0.8, delay: 0.4 }}
                             >
                                 <i className="bi bi-github"></i>
                             </motion.a>
                             <motion.a
                                 href="https://x.com/0xGeorgiev"
-                                initial={{ opacity: 0, x: 20 }}
-                                animate={{ opacity: 1, x: 0 }}
+                                animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
                                 transition={{ duration: 0.8, delay: 0.6 }}
                             >
                                 <i className="bi bi-twitter-x"></i>
@@ -93,8 +93,7 @@ export default function ContactSection() {
 
                     <motion.p
                         className="text-sm md:text-xl flex items-center gap-3"
-                        initial={{ opacity: 0, x: 30 }}
-                        animate={{ opacity: 1, x: 0 }}
+                        animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
                         <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24"
@@ -108,8 +107,7 @@ export default function ContactSection() {
 
                     <motion.p
                         className="text-sm md:text-xl flex items-center gap-3"
-                        initial={{ opacity: 0, x: 30 }}
-                        animate={{ opacity: 1, x: 0 }}
+                        animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
                         transition={{ duration: 0.8, delay: 0.4 }}
                     >
                         <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24"

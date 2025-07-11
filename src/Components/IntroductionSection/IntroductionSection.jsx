@@ -3,6 +3,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import Typewriter from "./TypeWriter.jsx";
 import {motion} from 'framer-motion';
 import GreetingsCodeComponent from "./GreetingsCodeComponent.jsx";
+import { useInView } from 'react-intersection-observer';
 
 const iconVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -27,13 +28,17 @@ const iconVariants = {
 };
 
 export default function IntroductionSection() {
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+
     return (
-        <section id="introduction-section" className={"introduction-section"}>
+        <section id="introduction-section" className={"introduction-section"} ref={ref}>
             <article className={"introduction-article"}>
                 <motion.h3
                     className="introduction"
-                    initial={{opacity: 0, x: -30}}
-                    animate={{opacity: 1, x: 0}}
+                    animate={inView ? {opacity: 1, x: 0} : {opacity: 0, x: -30}}
                     transition={{duration: 1.75, ease: "easeOut"}}
                 >
                     Hello 👋<br/> this is <span className="name">Lyubomir</span>
@@ -41,8 +46,7 @@ export default function IntroductionSection() {
 
                 <motion.h3
                     className="introduction-description"
-                    initial={{opacity: 0, x: -30}}
-                    animate={{opacity: 1, x: 0}}
+                    animate={inView ? {opacity: 1, x: 0} : {opacity: 0, x: -30}}
                     transition={{duration: 1.75, ease: "easeOut"}}
                 >
                     I am a <span>full-stack developer</span> from Sofia,<br/>Bulgaria
@@ -51,8 +55,7 @@ export default function IntroductionSection() {
                 <div className={"introduction-socials"}>
                     <motion.div
                         variants={iconVariants}
-                        initial="hidden"
-                        animate="visible"
+                        animate={inView ? "visible" : "hidden"}
                         custom={0.2}
                         whileHover="hover"
                         whileTap="tap"
@@ -64,8 +67,7 @@ export default function IntroductionSection() {
 
                     <motion.div
                         variants={iconVariants}
-                        initial="hidden"
-                        animate="visible"
+                        animate={inView ? "visible" : "hidden"}
                         custom={0.4}
                         whileHover="hover"
                         whileTap="tap"
@@ -78,8 +80,7 @@ export default function IntroductionSection() {
 
                     <motion.div
                         variants={iconVariants}
-                        initial="hidden"
-                        animate="visible"
+                        animate={inView ? "visible" : "hidden"}
                         custom={0.6}
                         whileHover="hover"
                         whileTap="tap"
@@ -97,8 +98,7 @@ export default function IntroductionSection() {
                    role="button" target="_blank"
                           href="LyubomirGeorgievGeorgievResume.pdf"
                           download="LyubomirGeorgievResume.pdf"
-                          initial={{opacity: 0, y: 20}}
-                          animate={{opacity: 1, y: 0}}
+                          animate={inView ? {opacity: 1, y: 0} : {opacity: 0, y: 20}}
                           transition={{duration: 0.8, ease: "easeOut", delay: 0.8}}><span>Get Resume</span>
                     <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="16"
                          width="16" xmlns="http://www.w3.org/2000/svg">
@@ -112,8 +112,7 @@ export default function IntroductionSection() {
 
 
                 <motion.div
-                    initial={{opacity: 0, x: 30}}
-                    animate={{opacity: 1, x: 0}}
+                    animate={inView ? {opacity: 1, x: 0} : {opacity: 0, x: 30}}
                     transition={{duration: 1.75, ease: "easeOut"}}
                 ><GreetingsCodeComponent/>
                 </motion.div>
