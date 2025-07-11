@@ -1,5 +1,6 @@
 import './CertificationSection.css';
 import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 import DivisionLine from "../DivisionLine/DivisionLine.jsx";
 import Title from "../Title/Title.jsx";
 
@@ -19,8 +20,13 @@ const childVariants = {
 };
 
 export default function CertificationSection() {
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+
     return (
-        <section id="certification-section" className="certification-section">
+        <section id="certification-section" className="certification-section" ref={ref}>
             <DivisionLine/>
             <br/>
             <br/>
@@ -32,13 +38,13 @@ export default function CertificationSection() {
                     className="certificates-container"
                     variants={containerVariants}
                     initial="hidden"
-                    animate="visible"
+                    animate={inView ? "visible" : "hidden"}
                 >
 
                     <motion.div
                         className="certificate-three-container certificate-container"
                         variants={childVariants}
-                        animate={{
+                        whileInView={{
                             x: 0,
                             y: [0, -10, 0],
                         }}
@@ -53,7 +59,7 @@ export default function CertificationSection() {
                     <motion.div
                         className="certificate-two-container certificate-container"
                         variants={childVariants}
-                        animate={{
+                        whileInView={{
                             x: 0,
                             y: [0, -10, 0],
                         }}
@@ -68,7 +74,7 @@ export default function CertificationSection() {
                     <motion.div
                         className="certificate-one-container certificate-container"
                         variants={childVariants}
-                        animate={{
+                        whileInView={{
                             x: 0,
                             y: [0, -10, 0],
                         }}
@@ -84,8 +90,7 @@ export default function CertificationSection() {
             <article className="certificates-description">
                 <motion.div
                     className="certificates-description-container"
-                    initial={{ opacity: 0, x: 25 }}
-                    animate={{ opacity: 1, x: 0 }}
+                    animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 25 }}
                     transition={{ duration: 1.5, ease: "easeOut" }}
                 >
                     <h3>Udemy</h3>
