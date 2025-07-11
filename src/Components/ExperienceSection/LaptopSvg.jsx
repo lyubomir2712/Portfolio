@@ -1,5 +1,5 @@
 import * as React from "react";
-const SvgLaptopHero = (props) => (
+const LaptopSvg = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -140,4 +140,4 @@ const SvgLaptopHero = (props) => (
     </g>
   </svg>
 );
-export default SvgLaptopHero;
+export default LaptopSvg;

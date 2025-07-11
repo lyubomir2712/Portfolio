@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import Card from "../Card/Card.jsx";
 import DivisionLine from "../DivisionLine/DivisionLine.jsx";
 import Title from "../Title/Title.jsx";
-import LaptopHero from "./LaptopHero.jsx";
 import "./ExperienceSection.css";
 import ExperienceBackgroundSvg from "./ExperienceBackgroundSvg.jsx";
+import LaptopSvg from "./LaptopSvg.jsx";
 
 export default function ExperienceSection() {
     return (
@@ -20,7 +20,7 @@ export default function ExperienceSection() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1.75 }}
                     >
-                        <LaptopHero/>
+                        <LaptopSvg/>
                 </motion.div>
 
                 <div className="experience-section-cell2">
