@@ -1,11 +1,16 @@
+import { useInView } from 'react-intersection-observer';
 import './ProjectsSection.css';
 import {motion} from 'framer-motion';
 import DivisionLine from "../DivisionLine/DivisionLine.jsx";
 import Title from "../Title/Title.jsx";
 
 export default function ProjectsSection() {
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
     return (
-        <section id="projects-section" className="projects-section">
+        <section id="projects-section" className="projects-section" ref={ref}>
             <br/><br/>
             <DivisionLine/>
 
@@ -13,14 +18,12 @@ export default function ProjectsSection() {
             <br/><br/>
             <motion.div
                 className="projects-container"
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
+                animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
                 transition={{ duration: 1, ease: "easeOut" }}
             >
                 <motion.div
                     className="projects-card"
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
                     transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
                 >
                     <div className="projects-card-image">
@@ -43,8 +46,7 @@ export default function ProjectsSection() {
 
                 <motion.div
                     className="projects-card"
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
                     transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
                 >
                     <div className="projects-card-image">
@@ -67,8 +69,7 @@ export default function ProjectsSection() {
 
                 <motion.div
                     className="projects-card"
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
                     transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
                 >
                     <div className="projects-card-image">
@@ -91,8 +92,7 @@ export default function ProjectsSection() {
 
                 <motion.div
                     className="projects-card"
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
                     transition={{ duration: 1, ease: "easeOut", delay: 0.8 }}
                 >
                     <div className="projects-card-image">
