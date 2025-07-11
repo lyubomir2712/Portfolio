@@ -28,7 +28,7 @@ export default function EducationSection() {
                     className="education-cell-two"
                     initial={{ opacity: 0, x: 60 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 1.75 }}
+                    transition={{ duration: 1, delay: 0.2 }}
                 >
                     <Card date={"09/2022 - 01/2026"} title={"Software Engineering/Bachelor"} text={"University of Veliko Tarnovo"}/>
                 </motion.div>

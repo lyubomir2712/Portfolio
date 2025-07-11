@@ -1,13 +1,19 @@
 import './ContactSection.css'
 import GithubIcon from "./GithubIcon.jsx";
 import LinkedInIcon from "./LinkedInIcon.jsx";
+import { motion } from "framer-motion";
 
 export default function ContactSection() {
     return (
         <section id="contact-section" className="contact-section">
             <h2 className="contact-title">Contact Me</h2>
             <div className="contact-container">
-                <div className="contact-cell1">
+                <motion.div
+                    className="contact-cell1"
+                    initial={{ opacity: 0, x: -30 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 1.75 }}
+                >
                 <form className="contact-form">
                     <div className="contact-form-content">
 
@@ -42,26 +48,55 @@ export default function ContactSection() {
                         d="M3 6l9 6l9 -6"></path><path d="M15 18h6"></path><path
                         d="M18 15l3 3l-3 3"></path></svg></span></button>
                 </form>
-                </div>
+                </motion.div>
 
 
                 <div className="contacts-cell2" >
                     <div className="contacts-mini-title-container">
-                        <div
-                            className="bg-[#1a1443] w-38 h-10 inline-block text-white rotate-90 p-2 px-3 text-xl rounded-md contacts-mini-title">
-                                CONTACTS
-
-                        </div>
+                        <motion.div
+                            className="bg-[#1a1443] w-38 h-10 inline-block text-white rotate-90 p-2 px-3 text-xl rounded-md contacts-mini-title"
+                            initial={{ opacity: 0, y: -20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                        >
+                            CONTACTS
+                        </motion.div>
                         <div className="flex flex-col gap-5">
-                            <a href="https://www.linkedin.com/in/lyubomir-georgiev-ab9116248/"><i className="bi bi-linkedin"></i></a>
-                            <a href="https://github.com/lyubomir2712"><i className="bi bi-github"></i></a>
-                            <a href="https://x.com/0xGeorgiev"><i className="bi bi-twitter-x"></i></a>
+                            <motion.a
+                                href="https://www.linkedin.com/in/lyubomir-georgiev-ab9116248/"
+                                initial={{ opacity: 0, x: 20 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.8, delay: 0.2 }}
+                            >
+                                <i className="bi bi-linkedin"></i>
+                            </motion.a>
+                            <motion.a
+                                href="https://github.com/lyubomir2712"
+                                initial={{ opacity: 0, x: 20 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.8, delay: 0.4 }}
+                            >
+                                <i className="bi bi-github"></i>
+                            </motion.a>
+                            <motion.a
+                                href="https://x.com/0xGeorgiev"
+                                initial={{ opacity: 0, x: 20 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.8, delay: 0.6 }}
+                            >
+                                <i className="bi bi-twitter-x"></i>
+                            </motion.a>
                         </div>
                     </div>
                     <div className="contacts-buttons-container pl-[45%] w-[100%] ">
                         <div className="email-location-container gap-5 flex flex-col">
 
-                    <p className="text-sm md:text-xl flex items-center gap-3">
+                    <motion.p
+                        className="text-sm md:text-xl flex items-center gap-3"
+                        initial={{ opacity: 0, x: 30 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
+                    >
                         <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24"
                              className="bg-[#8b98a5] p-2 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
                              height="36" width="36" xmlns="http://www.w3.org/2000/svg">
@@ -69,9 +104,14 @@ export default function ContactSection() {
                             <path
                                 d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10h5v-2h-5c-4.34 0-8-3.66-8-8s3.66-8 8-8 8 3.66 8 8v1.43c0 .79-.71 1.57-1.5 1.57s-1.5-.78-1.5-1.57V12c0-2.76-2.24-5-5-5s-5 2.24-5 5 2.24 5 5 5c1.38 0 2.64-.56 3.54-1.47.65.89 1.77 1.47 2.96 1.47 1.97 0 3.5-1.6 3.5-3.57V12c0-5.52-4.48-10-10-10zm0 13c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
                         </svg>
-                        <span>lyubomirgeorgiev2712@gmail.com</span></p>
+                        <span>lyubomirgeorgiev2712@gmail.com</span></motion.p>
 
-                    <p className="text-sm md:text-xl flex items-center gap-3">
+                    <motion.p
+                        className="text-sm md:text-xl flex items-center gap-3"
+                        initial={{ opacity: 0, x: 30 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8, delay: 0.4 }}
+                    >
                         <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24"
                              className="bg-[#8b98a5] p-2 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
                              height="36" width="36" xmlns="http://www.w3.org/2000/svg">
@@ -84,7 +124,7 @@ export default function ContactSection() {
                                 </g>
                             </g>
                         </svg>
-                        <span>Sofia, Bulgaria</span></p>
+                        <span>Sofia, Bulgaria</span></motion.p>
                         </div>
                     </div>
                 </div>
