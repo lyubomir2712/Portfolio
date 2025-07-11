@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import "./EducationSection.css"
 import Card from "../Card/Card.jsx";
 import SvgEducation from "./SvgEducation.jsx";
@@ -15,12 +16,22 @@ export default function EducationSection() {
             <EducationBackgroundSvg />
 
             <div className="education-main">
-                <div className={"education-cell-one"}>
+                <motion.div
+                    className="education-cell-one"
+                    initial={{ opacity: 0, x: -30 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 1.75 }}
+                >
                     <SvgEducation/>
-                </div>
-                <div className={"education-cell-two"}>
+                </motion.div>
+                <motion.div
+                    className="education-cell-two"
+                    initial={{ opacity: 0, x: 60 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 1.75 }}
+                >
                     <Card date={"09/2022 - 01/2026"} title={"Software Engineering/Bachelor"} text={"University of Veliko Tarnovo"}/>
-                </div>
+                </motion.div>
             </div>
         </section>
     )
