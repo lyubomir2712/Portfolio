@@ -32,6 +32,10 @@
     line-height: 3rem;
 }
 
+.introduction, .introduction-description{
+    text-align: left;
+}
+
 .introduction-description span{
     color: #16F2B3;
     font-weight: 700;
@@ -46,17 +50,12 @@
     flex-direction: row;
 }
 
-.introduction, .introduction-description{
-    text-align: left;
-}
-
 .icon{
     color: #EC4899;
     font-size: 1.9rem;
     width: auto;
     transition: transform 0.3s ease-in-out;
 }
-
 
 .introduction-section .bi-linkedin, .introduction-section .bi-github, .introduction-section .bi-twitter-x {
     font-size: 1.3rem;

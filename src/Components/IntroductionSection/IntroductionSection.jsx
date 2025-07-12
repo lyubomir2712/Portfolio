@@ -1,6 +1,5 @@
 import './IntroductionSection.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import Typewriter from "./TypeWriter.jsx";
 import {motion} from 'framer-motion';
 import GreetingsCodeComponent from "./GreetingsCodeComponent.jsx";
 import { useInView } from 'react-intersection-observer';
@@ -40,8 +39,7 @@ export default function IntroductionSection() {
                     className="introduction"
                     initial={{opacity: 0, x: -30}}
                     animate={inView ? {opacity: 1, x: 0} : {opacity: 0, x: -30}}
-                    transition={{duration: 1.75, ease: "easeOut"}}
-                >
+                    transition={{duration: 1.75, ease: "easeOut"}}>
                     Hello 👋<br/> this is <span className="name">Lyubomir</span>
                 </motion.h3>
 
@@ -49,8 +47,7 @@ export default function IntroductionSection() {
                     className="introduction-description"
                     initial={{opacity: 0, x: -30}}
                     animate={inView ? {opacity: 1, x: 0} : {opacity: 0, x: -30}}
-                    transition={{duration: 1.75, ease: "easeOut"}}
-                >
+                    transition={{duration: 1.75, ease: "easeOut"}}>
                     I am a <span>full-stack developer</span> from Sofia,<br/>Bulgaria
                 </motion.h3>
 
@@ -60,8 +57,7 @@ export default function IntroductionSection() {
                         animate={inView ? "visible" : "hidden"}
                         custom={0.2}
                         whileHover="hover"
-                        whileTap="tap"
-                    >
+                        whileTap="tap">
                         <a href="https://www.linkedin.com/in/lyubomir-georgiev-ab9116248/">
                             <i className="bi bi-linkedin icon"></i>
                         </a>
@@ -72,8 +68,7 @@ export default function IntroductionSection() {
                         animate={inView ? "visible" : "hidden"}
                         custom={0.4}
                         whileHover="hover"
-                        whileTap="tap"
-                    >
+                        whileTap="tap">
 
                         <a href="https://github.com/lyubomir2712">
                             <i className="bi bi-github icon"></i>
@@ -87,14 +82,9 @@ export default function IntroductionSection() {
                         whileHover="hover"
                         whileTap="tap"
                     >
-
                         <a href="https://x.com/0xGeorgiev"><i className="bi bi-twitter-x"></i></a>
                     </motion.div>
-
-
-
                 </div>
-
 
                 <motion.a className="flex items-center mt-8 w-46 hover:w-48 h-15 gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
                    role="button" target="_blank"
@@ -112,8 +102,6 @@ export default function IntroductionSection() {
             </article>
 
             <article className="tech-stack-article">
-
-
                 <motion.div
                     initial={{opacity: 0, x: 30}}
                     animate={inView ? {opacity: 1, x: 0} : {opacity: 0, x: 30}}
@@ -121,6 +109,6 @@ export default function IntroductionSection() {
                 ><GreetingsCodeComponent/>
                 </motion.div>
             </article>
-            </section>
+        </section>
     )
 }
