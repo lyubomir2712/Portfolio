@@ -30,11 +30,12 @@ export default function AboutMeSection() {
 
                 <div className="about-me-cell2 about-me-profile grid [grid-template-columns:3fr_1fr] gap-4 justify-items-end">
                     <motion.img
-                        className="profile-img w-75 h-auto rounded-lg grayscale hover:grayscale-0 hover:scale-105 transition duration-700 ease-in-out"
+                        className="profile-img w-75 h-auto rounded-lg"
                         src="src/assets/profile.jpeg"
                         alt="profile"
-                        initial={{ x: 30, opacity: 0 }}
+                        initial={{ x: 30, opacity: 0, filter: "grayscale(100%)", scale: 1 }}
                         animate={inView ? { x: 0, opacity: 1 } : { x: 30, opacity: 0 }}
+                        whileHover={{ filter: "grayscale(0%)", scale: 1.05 }}
                         transition={{ duration: 1.75 }}
                     />
 
