@@ -93,8 +93,8 @@ export default function ContactSection() {
 
                     <div className="contacts-buttons-container pl-[45%] w-[100%]">
                         <div className="email-location-container gap-5 flex flex-col">
-                            <motion.p
-                                className="text-sm md:text-xl flex items-center gap-3"
+                            <motion.span
+                                className="text-sm md:text-xl flex items-center gap-3 w-90"
                                 initial={{ opacity: 0, x: 30 }}
                                 animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
                                 transition={{ duration: 0.8, delay: 0.2 }}
@@ -104,10 +104,10 @@ export default function ContactSection() {
                                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10h5v-2h-5c-4.34 0-8-3.66-8-8s3.66-8 8-8 8 3.66 8 8v1.43c0 .79-.71 1.57-1.5 1.57s-1.5-.78-1.5-1.57V12c0-2.76-2.24-5-5-5s-5 2.24-5 5 2.24 5 5 5c1.38 0 2.64-.56 3.54-1.47.65.89 1.77 1.47 2.96 1.47 1.97 0 3.5-1.6 3.5-3.57V12c0-5.52-4.48-10-10-10zm0 13c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z" />
                                 </svg>
                                 <span>lyubomirgeorgiev2712@gmail.com</span>
-                            </motion.p>
+                            </motion.span>
 
-                            <motion.p
-                                className="text-sm md:text-xl flex items-center gap-3"
+                            <motion.span
+                                className="text-sm md:text-xl flex items-center gap-3 w-90"
                                 initial={{ opacity: 0, x: 30 }}
                                 animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
                                 transition={{ duration: 0.8, delay: 0.4 }}
@@ -121,7 +121,7 @@ export default function ContactSection() {
                                     </g>
                                 </svg>
                                 <span>Sofia, Bulgaria</span>
-                            </motion.p>
+                            </motion.span>
                         </div>
                     </div>
                 </div>
