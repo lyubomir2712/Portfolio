@@ -4,8 +4,8 @@
     top: 50%;
     left: 100%;
     transform: translateY(-50%);
-    width: 90px; /* adjust as needed */
+    width: 90px;
     height: 2px;
-    background-color: #1a1443; /* or any other color */
+    background-color: #1a1443;
 }
 
