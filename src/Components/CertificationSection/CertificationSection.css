@@ -97,3 +97,7 @@
     text-align: left;
     font-size: 1.2rem;
 }
+
+.certification-section .title-container{
+    width: 8rem !important;
+}
