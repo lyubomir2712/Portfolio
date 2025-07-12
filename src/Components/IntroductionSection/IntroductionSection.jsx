@@ -38,6 +38,7 @@ export default function IntroductionSection() {
             <article className={"introduction-article"}>
                 <motion.h3
                     className="introduction"
+                    initial={{opacity: 0, x: -30}}
                     animate={inView ? {opacity: 1, x: 0} : {opacity: 0, x: -30}}
                     transition={{duration: 1.75, ease: "easeOut"}}
                 >
@@ -46,6 +47,7 @@ export default function IntroductionSection() {
 
                 <motion.h3
                     className="introduction-description"
+                    initial={{opacity: 0, x: -30}}
                     animate={inView ? {opacity: 1, x: 0} : {opacity: 0, x: -30}}
                     transition={{duration: 1.75, ease: "easeOut"}}
                 >
@@ -98,6 +100,7 @@ export default function IntroductionSection() {
                    role="button" target="_blank"
                           href="LyubomirGeorgievGeorgievResume.pdf"
                           download="LyubomirGeorgievResume.pdf"
+                          initial={{opacity: 0, y: 20}}
                           animate={inView ? {opacity: 1, y: 0} : {opacity: 0, y: 20}}
                           transition={{duration: 0.8, ease: "easeOut", delay: 0.8}}><span>Get Resume</span>
                     <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="16"
@@ -112,6 +115,7 @@ export default function IntroductionSection() {
 
 
                 <motion.div
+                    initial={{opacity: 0, x: 30}}
                     animate={inView ? {opacity: 1, x: 0} : {opacity: 0, x: 30}}
                     transition={{duration: 1.75, ease: "easeOut"}}
                 ><GreetingsCodeComponent/>
