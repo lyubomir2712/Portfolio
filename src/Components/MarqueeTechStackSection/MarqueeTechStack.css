@@ -3,10 +3,19 @@
     position: relative;
 }
 
+.marquee-tech-stack-section .title-container{
+    backdrop-filter: blur(64px);
+    -webkit-backdrop-filter: blur(64px); /* For Safari support */
+}
+
 .marquee{
     overflow: hidden;
     width: 70%;
     margin: 0 auto;
+}
+
+.marquee-wrapper {
+    position: relative;
 }
 
 .top-line {
@@ -55,9 +64,7 @@
     border-radius: 5px;
 }
 
-.marquee-wrapper {
-    position: relative;
-}
+
 
 @keyframes marquee {
     0%   { transform: translateX(0); }
@@ -65,7 +72,3 @@
 }
 
 
-.marquee-tech-stack-section .title-container{
-    backdrop-filter: blur(64px);
-    -webkit-backdrop-filter: blur(64px); /* For Safari support */
-}
