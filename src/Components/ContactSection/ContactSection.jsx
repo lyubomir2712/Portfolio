@@ -13,27 +13,31 @@ export default function ContactSection() {
     return (
         <section id="contact-section" className="contact-section" ref={ref}>
             <h2 className="contact-title">Contact Me</h2>
+
             <div className="contact-container">
                 <motion.div
                     className="contact-cell1"
                     initial={{ opacity: 0, x: -30 }}
                     animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
-                    transition={{ duration: 1.75 }}
-                >
+                    transition={{ duration: 1.75 }}>
+
                     <form className="contact-form">
                         <div className="contact-form-content">
                             <div className="input-container">
                                 <input className="username-input" type="text" placeholder=" " />
                                 <div className="label-line">Username *</div>
                             </div>
+
                             <div className="input-container">
                                 <input className="email-input" type="email" placeholder=" " />
                                 <div className="label-line">Email *</div>
                             </div>
+
                             <div className="textarea-container">
                                 <textarea className="message-input" placeholder=" " />
                                 <div className="label-line">Message *</div>
                             </div>
+
                         </div>
                         <button className="flex mt-5 mx-auto ml-auto items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-5 md:px-12 py-2.5 md:py-3 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold">
                             <span className="flex items-center gap-1 cursor-pointer">
@@ -56,10 +60,10 @@ export default function ContactSection() {
                             className="bg-[#1a1443] w-38 h-10 inline-block text-white rotate-90 p-2 px-3 text-xl rounded-md contacts-mini-title"
                             initial={{ opacity: 0, y: -20 }}
                             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
-                            transition={{ duration: 1 }}
-                        >
+                            transition={{ duration: 1 }}>
                             CONTACTS
                         </motion.div>
+
                         <div className="flex flex-col gap-5">
                             {[
                                 {
@@ -83,8 +87,7 @@ export default function ContactSection() {
                                     href={href}
                                     initial={{ opacity: 0, x: 20 }}
                                     animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
-                                    transition={{ duration: 0.8, delay }}
-                                >
+                                    transition={{ duration: 0.8, delay }}>
                                     <i className={icon}></i>
                                 </motion.a>
                             ))}
@@ -97,12 +100,13 @@ export default function ContactSection() {
                                 className="text-sm md:text-xl flex items-center gap-3 w-90"
                                 initial={{ opacity: 0, x: 30 }}
                                 animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
-                                transition={{ duration: 0.8, delay: 0.2 }}
-                            >
+                                transition={{ duration: 0.8, delay: 0.2 }}>
+
                                 <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" className="bg-[#8b98a5] p-2 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer" height="36" width="36">
                                     <path fill="none" d="M0 0h24v24H0z" />
                                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10h5v-2h-5c-4.34 0-8-3.66-8-8s3.66-8 8-8 8 3.66 8 8v1.43c0 .79-.71 1.57-1.5 1.57s-1.5-.78-1.5-1.57V12c0-2.76-2.24-5-5-5s-5 2.24-5 5 2.24 5 5 5c1.38 0 2.64-.56 3.54-1.47.65.89 1.77 1.47 2.96 1.47 1.97 0 3.5-1.6 3.5-3.57V12c0-5.52-4.48-10-10-10zm0 13c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z" />
                                 </svg>
+
                                 <span>lyubomirgeorgiev2712@gmail.com</span>
                             </motion.span>
 
@@ -110,8 +114,8 @@ export default function ContactSection() {
                                 className="text-sm md:text-xl flex items-center gap-3 w-90"
                                 initial={{ opacity: 0, x: 30 }}
                                 animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
-                                transition={{ duration: 0.8, delay: 0.4 }}
-                            >
+                                transition={{ duration: 0.8, delay: 0.4 }}>
+
                                 <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" className="bg-[#8b98a5] p-2 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer" height="36" width="36">
                                     <g id="Location_On">
                                         <g>
@@ -120,6 +124,7 @@ export default function ContactSection() {
                                         </g>
                                     </g>
                                 </svg>
+
                                 <span>Sofia, Bulgaria</span>
                             </motion.span>
                         </div>
