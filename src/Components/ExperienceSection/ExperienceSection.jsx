@@ -21,15 +21,18 @@ export default function ExperienceSection() {
             <Title title={"Experience"}/>
             <br/><br/>
             <div className="experience-section-container">
-                <motion.div className="experience-section-cell1"
-                        animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
-                        transition={{ duration: 1.75 }}
-                    >
-                        <LaptopSvg/>
+                <motion.div
+                    className="experience-section-cell1"
+                    initial={{ opacity: 0, x: -30 }}
+                    animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
+                    transition={{ duration: 1.75 }}
+                >
+                    <LaptopSvg/>
                 </motion.div>
 
                 <div className="experience-section-cell2">
                     <motion.div
+                        initial={{ opacity: 0, x: 60 }}
                         animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 60 }}
                         transition={{ duration: 1, delay: 0.2 }}
                     >
@@ -37,6 +40,7 @@ export default function ExperienceSection() {
                     </motion.div>
                     <br/>
                     <motion.div
+                        initial={{ opacity: 0, x: 60 }}
                         animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 60 }}
                         transition={{ duration: 1, delay: 0.5 }}
                     >
