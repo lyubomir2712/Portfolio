@@ -28,73 +28,73 @@ export default function CertificationSection() {
     return (
         <section id="certification-section" className="certification-section" ref={ref}>
             <DivisionLine/>
-            <br/>
-            <br/>
+
+            <br/><br/>
+
             <Title title={"Certifications"} />
+
             <div className="certification-section-container">
                 <article className="certificates-article">
-
-                <motion.div
-                    className="certificates-container"
-                    variants={containerVariants}
-                    initial="hidden"
-                    animate={inView ? "visible" : "hidden"}
-                >
-
                     <motion.div
-                        className="certificate-three-container certificate-container"
-                        variants={childVariants}
-                        initial={{ opacity: 0, x: -50 }}
-                        animate={inView ? { opacity: 1, x: 0, y: [0, -10, 0] } : { opacity: 0, x: -50, y: 0 }}
-                        transition={{
-                            x: { duration: 1, ease: "easeOut", delay: 0 },
-                            y: { duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 },
-                        }}
-                    >
-                        <img className="certificate-three certificate" src="../../../public/EntityFramework%20certificate.png" alt="Certificate Three" />
-                    </motion.div>
+                        className="certificates-container"
+                        variants={containerVariants}
+                        initial="hidden"
+                        animate={inView ? "visible" : "hidden"}>
 
-                    <motion.div
-                        className="certificate-two-container certificate-container"
-                        variants={childVariants}
-                        initial={{ opacity: 0, x: -50 }}
-                        animate={inView ? { opacity: 1, x: 0, y: [0, -10, 0] } : { opacity: 0, x: -50, y: 0 }}
-                        transition={{
-                            x: { duration: 1, ease: "easeOut", delay: 0.5 },
-                            y: { duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 },
-                        }}
-                    >
-                        <img className="certificate-two certificate" src="../../../public/API%20certificate.png" alt="Certificate Two" />
-                    </motion.div>
+                        <motion.div
+                            className="certificate-three-container certificate-container"
+                            variants={childVariants}
+                            initial={{ opacity: 0, x: -50 }}
+                            animate={inView ? { opacity: 1, x: 0, y: [0, -10, 0] } : { opacity: 0, x: -50, y: 0 }}
+                            transition={{
+                                x: { duration: 1, ease: "easeOut", delay: 0 },
+                                y: { duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 },
+                            }
+                        }>
+                            <img className="certificate-three certificate" src="../../../public/EntityFramework%20certificate.png" alt="Certificate Three" />
+                        </motion.div>
 
-                    <motion.div
-                        className="certificate-one-container certificate-container"
-                        variants={childVariants}
-                        initial={{ opacity: 0, x: -50 }}
-                        animate={inView ? { opacity: 1, x: 0, y: [0, -10, 0] } : { opacity: 0, x: -50, y: 0 }}
-                        transition={{
-                            x: { duration: 1, ease: "easeOut", delay: 1 },
-                            y: { duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 },
-                        }}
-                    >
-                        <img className="certificate-one certificate" src="../../../public/MVC%20certificate.png" alt="Certificate One" />
+                        <motion.div
+                            className="certificate-two-container certificate-container"
+                            variants={childVariants}
+                            initial={{ opacity: 0, x: -50 }}
+                            animate={inView ? { opacity: 1, x: 0, y: [0, -10, 0] } : { opacity: 0, x: -50, y: 0 }}
+                            transition={{
+                                x: { duration: 1, ease: "easeOut", delay: 0.5 },
+                                y: { duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 },
+                            }
+                        }>
+                            <img className="certificate-two certificate" src="../../../public/API%20certificate.png" alt="Certificate Two" />
+                        </motion.div>
+
+                        <motion.div
+                            className="certificate-one-container certificate-container"
+                            variants={childVariants}
+                            initial={{ opacity: 0, x: -50 }}
+                            animate={inView ? { opacity: 1, x: 0, y: [0, -10, 0] } : { opacity: 0, x: -50, y: 0 }}
+                            transition={{
+                                x: { duration: 1, ease: "easeOut", delay: 1 },
+                                y: { duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 },
+                            }
+                        }>
+                            <img className="certificate-one certificate" src="../../../public/MVC%20certificate.png" alt="Certificate One" />
+                        </motion.div>
                     </motion.div>
-                </motion.div>
-            </article>
-            <article className="certificates-description">
-                <motion.div
-                    className="certificates-description-container"
-                    initial={{ opacity: 0, x: 25 }}
-                    animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 25 }}
-                    transition={{ duration: 1.5, ease: "easeOut" }}
-                >
-                    <h3>Udemy</h3>
-                    <h5>.NET Fullstack developer</h5>
-                    <p>
-                        I’ve earned Udemy certificates in .NET, React and software craftsmanship, strengthening my skills in clean code and best practices for full-stack development.
-                    </p>
-                </motion.div>
-            </article>
+                </article>
+
+                <article className="certificates-description">
+                    <motion.div
+                        className="certificates-description-container"
+                        initial={{ opacity: 0, x: 25 }}
+                        animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 25 }}
+                        transition={{ duration: 1.5, ease: "easeOut" }}>
+                        <h3>Udemy</h3>
+                        <h5>.NET Fullstack developer</h5>
+                        <p>
+                            I’ve earned Udemy certificates in .NET, React and software craftsmanship, strengthening my skills in clean code and best practices for full-stack development.
+                        </p>
+                    </motion.div>
+                </article>
             </div>
         </section>
     );

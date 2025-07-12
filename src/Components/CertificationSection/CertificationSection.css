@@ -3,6 +3,11 @@
     margin: 5rem auto 0 auto;
     width: 100%;
 }
+
+.certification-section .title-container{
+    width: 8rem !important;
+}
+
 .certification-section-container{
     display: flex;
     flex-direction: row;
@@ -96,8 +101,4 @@
 .certificates-description p{
     text-align: left;
     font-size: 1.2rem;
-}
-
-.certification-section .title-container{
-    width: 8rem !important;
 }
