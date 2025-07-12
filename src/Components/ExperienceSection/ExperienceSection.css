@@ -4,6 +4,16 @@
     display: block;
 }
 
+.experience-section .title-container{
+    width: 7rem !important;
+}
+
+.experience-svg-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .experience-section-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -21,12 +31,5 @@
     width: 40rem;
 }
 
-.experience-svg-background{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
 
-.experience-section .title-container{
-    width: 7rem !important;
-}
+
