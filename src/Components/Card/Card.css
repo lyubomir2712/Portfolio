@@ -20,6 +20,14 @@
     height: 100%;
 }
 
+.card-svg{
+    position: absolute;
+    bottom: 0;
+    height: 11.8rem;
+    width: auto;
+    left: 0;
+}
+
 .card-cell1 {
     grid-column: 1 / span 2;
     color: #16F2B3;
@@ -49,11 +57,3 @@
     font-weight: 500;
 }
 
-.card-svg{
-    position: absolute;
-    bottom: 0;
-    height: 11.8rem;
-    width: auto;
-    left: 0;
-
-}
