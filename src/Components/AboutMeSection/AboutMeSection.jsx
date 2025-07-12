@@ -11,6 +11,7 @@ export default function AboutMeSection() {
         <section className="about-me-section w-[70%] left-1/2 transform -translate-x-1/2 origin-left relative" ref={ref}>
             <motion.h1
                 className="about-me-header text-2xl mb-4 text-[#16F2B3] text-left"
+                initial={{ x: -30, opacity: 0 }}
                 animate={inView ? { x: 0, opacity: 1 } : { x: -30, opacity: 0 }}
                 transition={{ duration: 1.75 }}
             >
@@ -20,6 +21,7 @@ export default function AboutMeSection() {
 
                 <motion.div
                     className="about-me-container text-left text-lg"
+                    initial={{ x: -30, opacity: 0 }}
                     animate={inView ? { x: 0, opacity: 1 } : { x: -30, opacity: 0 }}
                     transition={{ duration: 1.75 }}
                 >
@@ -31,12 +33,14 @@ export default function AboutMeSection() {
                         className="profile-img w-75 h-auto rounded-lg grayscale hover:grayscale-0 hover:scale-105 transition duration-700 ease-in-out"
                         src="src/assets/profile.jpeg"
                         alt="profile"
+                        initial={{ x: 30, opacity: 0 }}
                         animate={inView ? { x: 0, opacity: 1 } : { x: 30, opacity: 0 }}
                         transition={{ duration: 1.75 }}
                     />
 
                     <motion.span
                         className="bg-[#1a1443] w-38 h-10 inline-block text-white rotate-90 mt-14 p-2 px-3 text-xl rounded-md about-me-title"
+                        initial={{ y: -30, opacity: 0 }}
                         animate={inView ? { y: 0, opacity: 1 } : { y: -30, opacity: 0 }}
                         transition={{ duration: 1.75, delay: 0.5 }}
                     >
