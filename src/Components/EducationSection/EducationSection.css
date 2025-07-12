@@ -4,8 +4,6 @@
 }
 
 .education-title-container {
-    position: relative;
-    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -25,6 +23,10 @@
     height: 2px;
     background: rgb(37, 31, 75);
     z-index: -1;
+}
+
+.education-section .title-container{
+    width: 6rem !important;
 }
 
 .education-background{
@@ -55,19 +57,9 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-.education-svg {
-    transform-origin: center;
-    content-visibility: visible !important;
-    transform: translate3d(0px, 0px, 0px)
-}
 
-.education-svg g{
-    transform: matrix(1,0,0,1,640,400);
-}
 
-.education-section .title-container{
-    width: 6rem !important;
-}
+
 
 
 
