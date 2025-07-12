@@ -44,10 +44,8 @@ export default function CertificationSection() {
                     <motion.div
                         className="certificate-three-container certificate-container"
                         variants={childVariants}
-                        whileInView={{
-                            x: 0,
-                            y: [0, -10, 0],
-                        }}
+                        initial={{ opacity: 0, x: -50 }}
+                        animate={inView ? { opacity: 1, x: 0, y: [0, -10, 0] } : { opacity: 0, x: -50, y: 0 }}
                         transition={{
                             x: { duration: 1, ease: "easeOut", delay: 0 },
                             y: { duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 },
@@ -59,10 +57,8 @@ export default function CertificationSection() {
                     <motion.div
                         className="certificate-two-container certificate-container"
                         variants={childVariants}
-                        whileInView={{
-                            x: 0,
-                            y: [0, -10, 0],
-                        }}
+                        initial={{ opacity: 0, x: -50 }}
+                        animate={inView ? { opacity: 1, x: 0, y: [0, -10, 0] } : { opacity: 0, x: -50, y: 0 }}
                         transition={{
                             x: { duration: 1, ease: "easeOut", delay: 0.5 },
                             y: { duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 },
@@ -74,10 +70,8 @@ export default function CertificationSection() {
                     <motion.div
                         className="certificate-one-container certificate-container"
                         variants={childVariants}
-                        whileInView={{
-                            x: 0,
-                            y: [0, -10, 0],
-                        }}
+                        initial={{ opacity: 0, x: -50 }}
+                        animate={inView ? { opacity: 1, x: 0, y: [0, -10, 0] } : { opacity: 0, x: -50, y: 0 }}
                         transition={{
                             x: { duration: 1, ease: "easeOut", delay: 1 },
                             y: { duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 },
@@ -90,6 +84,7 @@ export default function CertificationSection() {
             <article className="certificates-description">
                 <motion.div
                     className="certificates-description-container"
+                    initial={{ opacity: 0, x: 25 }}
                     animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 25 }}
                     transition={{ duration: 1.5, ease: "easeOut" }}
                 >
