@@ -18,11 +18,13 @@ export default function ProjectsSection() {
             <br/><br/>
             <motion.div
                 className="projects-container"
+                initial={{ opacity: 0, y: 50 }}
                 animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
                 transition={{ duration: 1, ease: "easeOut" }}
             >
                 <motion.div
                     className="projects-card"
+                    initial={{ opacity: 0, y: 50 }}
                     animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
                     transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
                 >
@@ -46,6 +48,7 @@ export default function ProjectsSection() {
 
                 <motion.div
                     className="projects-card"
+                    initial={{ opacity: 0, y: 50 }}
                     animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
                     transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
                 >
@@ -69,6 +72,7 @@ export default function ProjectsSection() {
 
                 <motion.div
                     className="projects-card"
+                    initial={{ opacity: 0, y: 50 }}
                     animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
                     transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
                 >
@@ -92,6 +96,7 @@ export default function ProjectsSection() {
 
                 <motion.div
                     className="projects-card"
+                    initial={{ opacity: 0, y: 50 }}
                     animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
                     transition={{ duration: 1, ease: "easeOut", delay: 0.8 }}
                 >
