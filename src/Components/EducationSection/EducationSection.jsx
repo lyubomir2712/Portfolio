@@ -23,6 +23,7 @@ export default function EducationSection() {
             <div className="education-main">
                 <motion.div
                     className="education-cell-one"
+                    initial={{ opacity: 0, x: -30 }}
                     animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
                     transition={{ duration: 1.75 }}
                 >
@@ -30,6 +31,7 @@ export default function EducationSection() {
                 </motion.div>
                 <motion.div
                     className="education-cell-two"
+                    initial={{ opacity: 0, x: 60 }}
                     animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 60 }}
                     transition={{ duration: 1, delay: 0.2 }}
                 >
