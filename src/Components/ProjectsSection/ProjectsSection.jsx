@@ -26,7 +26,7 @@ const projectsData = [
         img: "../../../public/CarWashImg.jpeg",
         title: "GTR Car Wash",
         description: "Full‑Stack React/ASP.NET Web Application about a car wash with service.",
-        codeLink: "",
+        codeLink: " ",
         openLink: null,
         delay: 0.6
     },
@@ -35,7 +35,7 @@ const projectsData = [
         title: "Board Game",
         description: "Quiz themed JavaScript board game featuring questions about english works: \"Hamlet\" and \"The Lord of The Rings\".",
         codeLink: "https://github.com/lyubomir2712/English_Literature_Board_Game",
-        openLink: "",
+        openLink: " ",
         delay: 0.8
     }
 ];
