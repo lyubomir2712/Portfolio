@@ -3,10 +3,8 @@ import './ProjectsSection.css';
 import {motion} from 'framer-motion';
 import DivisionLine from "../DivisionLine/DivisionLine.jsx";
 import Title from "../Title/Title.jsx";
-
 import {useState} from "react";
 
-// Card‑specific data used to keep every card unique
 const projectsData = [
     {
         img: "../../../public/HotelBookingImg.jpg",
@@ -82,8 +80,8 @@ export default function ProjectsSection() {
                             <motion.img
                                 src={project.img}
                                 alt={`${project.title} card`}
-                                animate={{ scale: hoveredCard === idx ? 1.2 : 1 }}
-                                transition={{ duration: 0.3 }}
+                                animate={{ scale: hoveredCard === idx ? 1.1 : 1 }}
+                                transition={{ duration: 0.01 }}
                             />
                         </div>
 
