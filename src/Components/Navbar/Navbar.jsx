@@ -28,18 +28,46 @@ export default function Navbar() {
                 <Toolbar sx={{padding: 0}}>
 
 
-                       <a href="#"><span className="navbar-name hidden lg:block ml-[10rem] mr-[3rem]">
-                           Lyubomir Georgiev</span></a>
+                    <Box
+                        component="a"
+                        href="#"
+                        sx={{
+                            display: { xs: 'none', md: 'block' }, // only show when the burger is gone
+                            ml: '10rem',
+                            mr: '3rem',
+                            textDecoration: 'none',
+                        }}
+                        className="navbar-name"
+                    >
+                        Lyubomir&nbsp;Georgiev
+                    </Box>
 
                     <IconButton
                         aria-label="open navigation"
                         edge="start"
                         color="inherit"
                         onClick={handleOpenNavMenu}
-                        sx={{ display: { xs: 'block', md: 'none' }, mr: 1 }}
+                        sx={{
+                            display: { xs: 'flex', md: 'none' },
+                            flexDirection: 'row',
+                            alignItems: 'center',
+                            gap: '0.5rem',
+                        }}
                     >
+
                         <MenuIcon />
+                        <Typography
+                            variant="body1"
+                            sx={{
+                                display: { xs: 'block', md: 'none' },
+                                color: 'white',
+                                // marginTop: '0.25rem',
+                            }}
+                        >
+                            Menu
+                        </Typography>
                     </IconButton>
+
 
                     <Menu
                         anchorEl={anchorElNav}
