@@ -54,6 +54,7 @@ export default function IntroductionSection() {
                 <div className={"introduction-socials"}>
                     <motion.div
                         variants={iconVariants}
+                        initial="hidden"
                         animate={inView ? "visible" : "hidden"}
                         custom={0.2}
                         whileHover="hover"
@@ -65,6 +66,7 @@ export default function IntroductionSection() {
 
                     <motion.div
                         variants={iconVariants}
+                        initial="hidden"
                         animate={inView ? "visible" : "hidden"}
                         custom={0.4}
                         whileHover="hover"
@@ -77,6 +79,7 @@ export default function IntroductionSection() {
 
                     <motion.div
                         variants={iconVariants}
+                        initial="hidden"
                         animate={inView ? "visible" : "hidden"}
                         custom={0.6}
                         whileHover="hover"
