@@ -11,22 +11,9 @@
 
 }
 
-.projects-card{
-    position: relative;
-    background-color: #1a1d35;
-    border-radius: 0.5rem;
-    height: 27rem;
-    width: 13.8rem;
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.3s ease;
-    transform-origin: center center;
-    overflow: hidden;
-}
-
-.projects-card:hover .projects-card-image img{
-    transform: scale(1.2);
-}
+/*.projects-card:hover .projects-card-image img{*/
+/*    transform: scale(1.2);*/
+/*}*/
 .projects-card:hover{
     border: 0.5px solid #546083;
     transform: scale(1.02);
