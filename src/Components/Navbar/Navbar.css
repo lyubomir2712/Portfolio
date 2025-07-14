@@ -39,3 +39,10 @@
 
 @media (max-width: 991.98px) {
 }
+
+@media (max-width: 599px) {
+    .navbar-burger-icon{
+        margin-top: 0.38rem !important;
+        margin-left: 0.75rem !important;
+    }
+}

@@ -14,12 +14,14 @@ export default function Navbar() {
     const [anchorElNav, setAnchorElNav] = useState(null);
 
     const handleOpenNavMenu = (event) => {
-        setAnchorElNav(event.currentTarget);
+        setAnchorElNav((prev) => (prev ? null : event.currentTarget));
     };
 
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
     };
+
+
 
     return (
         <Box sx={{ flexGrow: 1 }}>
@@ -32,10 +34,11 @@ export default function Navbar() {
                         component="a"
                         href="#"
                         sx={{
-                            display: { xs: 'none', md: 'block' }, // only show when the burger is gone
-                            ml: '10rem',
-                            mr: '3rem',
-                            textDecoration: 'none',
+                            display: { xs: 'none', md: 'flex' },
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            ml: '10%',
+                            mr: '4%'
                         }}
                         className="navbar-name"
                     >
@@ -43,25 +46,39 @@ export default function Navbar() {
                     </Box>
 
                     <IconButton
+                        className="navbar-burger-icon"
                         aria-label="open navigation"
                         edge="start"
                         color="inherit"
                         onClick={handleOpenNavMenu}
+                        disableRipple
+                        disableFocusRipple
                         sx={{
-                            display: { xs: 'flex', md: 'none' },
+                            display: {xs: 'flex', md: 'none'},
                             flexDirection: 'row',
                             alignItems: 'center',
                             gap: '0.5rem',
+                            transition: 'transform 0.1s ease-in-out',
+                            '&:hover': {
+                                backgroundColor: 'transparent',
+                                transform: 'scale(1.05)',
+                            },
+                            '&:active': {
+                                transform: 'scale(0.9)',
+                            },
                         }}
                     >
+                        {anchorElNav ? (
+                            <i className="bi bi-x"></i>
+                        ) : (
+                            <i className="bi bi-list"></i>
+                        )}
 
-                        <MenuIcon />
                         <Typography
                             variant="body1"
                             sx={{
-                                display: { xs: 'block', md: 'none' },
+                                display: {xs: 'block', md: 'none'},
                                 color: 'white',
-                                // marginTop: '0.25rem',
                             }}
                         >
                             Menu
@@ -70,13 +87,15 @@ export default function Navbar() {
 
 
                     <Menu
+                        className="dropdown"
                         anchorEl={anchorElNav}
                         open={Boolean(anchorElNav)}
                         onClose={handleCloseNavMenu}
                         anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
                         transformOrigin={{ vertical: 'top', horizontal: 'left' }}
                         PaperProps={{ elevation: 0, sx: { bgcolor: '#0d1224', width: '100%', boxShadow: 'none' } }}
-                        sx={{ display: { xs: 'block', md: 'none' } }}
+                        sx={{ display: { xs: 'block', md: 'none',} }}
+
                     >
                         <MenuItem
                             sx={{
@@ -178,7 +197,7 @@ export default function Navbar() {
 
                     <a className="nav-link" href="#certification-section"><Button className={"navbar-item"} color="white"
                                                                              style={{
-                                                                                 fontSize: "1.1rem",
+                                                                                 fontSize: "1rem",
                                                                                  textTransform: "none"
                                                                              }}>Certifications</Button></a>
 
