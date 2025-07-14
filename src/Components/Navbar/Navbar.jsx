@@ -57,6 +57,7 @@ export default function Navbar() {
                             display: {xs: 'flex', md: 'none'},
                             flexDirection: 'row',
                             alignItems: 'center',
+                            zIndex: '2',
                             gap: '0.5rem',
                             transition: 'transform 0.1s ease-in-out',
                             '&:hover': {
@@ -94,7 +95,7 @@ export default function Navbar() {
                         anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
                         transformOrigin={{ vertical: 'top', horizontal: 'left' }}
                         PaperProps={{ elevation: 0, sx: { bgcolor: '#0d1224', width: '100%', boxShadow: 'none' } }}
-                        sx={{ display: { xs: 'block', md: 'none',} }}
+                        sx={{ display: { xs: 'block', md: 'none', zIndex: 1 } }}
 
                     >
                         <MenuItem
