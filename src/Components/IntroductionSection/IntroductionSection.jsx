@@ -40,7 +40,7 @@ export default function IntroductionSection() {
                     initial={{opacity: 0, x: -30}}
                     animate={inView ? {opacity: 1, x: 0} : {opacity: 0, x: -30}}
                     transition={{duration: 1.75, ease: "easeOut"}}>
-                    Hello 👋<br/> this is <span className="name">Lyubomir</span>
+                    Hello 👋<br className="breakline-1"/> this is <span className="name">Lyubomir</span>
                 </motion.h3>
 
                 <motion.h3
@@ -48,7 +48,7 @@ export default function IntroductionSection() {
                     initial={{opacity: 0, x: -30}}
                     animate={inView ? {opacity: 1, x: 0} : {opacity: 0, x: -30}}
                     transition={{duration: 1.75, ease: "easeOut"}}>
-                    I am a <span>full-stack developer</span> from Sofia,<br/>Bulgaria
+                    I am a <span>full-stack developer</span> from Sofia,<br className="breakline-2"/>Bulgaria
                 </motion.h3>
 
                 <div className={"introduction-socials"}>

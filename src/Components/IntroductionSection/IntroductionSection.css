@@ -82,6 +82,30 @@
 
 }
 
+@media (max-width: 891px) {
+    .introduction-container {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .introduction-section {
+        flex-direction: column;
+        height: auto;
+        margin-left: 1rem;
+        margin-bottom: 10rem;
+    }
+    .breakline-1, .breakline-2 {
+        display: none;
+    }
+    .introduction-greeting{
+        max-width: 33.5rem;
+    }
+
+    .introduction-article{
+        max-width: 80rem;
+        max-height: 20rem;
+    }
+}
+
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) { }
 
@@ -90,9 +114,4 @@
 
 /* 2K+ devices (very large screens, 1400px and up) */
 @media (min-width: 1400px) { }
-
-
-
-
-
 
