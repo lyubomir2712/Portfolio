@@ -39,14 +39,12 @@
     .about-me-cell2 {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .about-me-title {
-        order: 2;
         margin-top: 1rem;
         text-align: center;
         rotate: 0deg;
-        align-self: flex-start;
     }
 }

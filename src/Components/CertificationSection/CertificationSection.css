@@ -152,10 +152,6 @@
     .certificate-three-container{
         right: 0;
     }
-
-    .certificate-two{
-        opacity: 0.5;
-    }
 }
 
 @media (min-width: 501px) and (max-width: 569px) {
