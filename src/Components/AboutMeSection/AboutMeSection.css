@@ -9,3 +9,44 @@
     background-color: #1a1443;
 }
 
+@media(min-width: 650px) and (max-width: 1200px) {
+    .about-me-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .about-me-cell2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .about-me-profile {
+        width: 100%;
+    }
+
+    .profile-img {
+        align-self: flex-start;
+    }
+
+    .about-me-title {
+        align-self: flex-start;
+    }
+}
+
+@media(min-width: 100px) and (max-width: 649px) {
+    .about-me-cell2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me-title {
+        order: 2;
+        margin-top: 1rem;
+        text-align: center;
+        rotate: 0deg;
+        align-self: flex-start;
+    }
+}
