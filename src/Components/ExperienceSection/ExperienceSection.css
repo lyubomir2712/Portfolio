@@ -32,4 +32,60 @@
 }
 
 
+@media(min-width: 651px) and (max-width: 1000px) {
+    .experience-section-cell1{
+        display: none;
+    }
+
+    .experience-section-container{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 650px) {
+    .experience-section-cell2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .experience-section-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .experience-section-cell1{
+        display: none;
+    }
+}
+
+
+
+@media (min-width: 450px) and (max-width: 650px) {
+
+    .experience-section-cell2{
+        width: 30rem !important;
+    }
+
+    .card{
+        width: 30rem !important;
+    }
+
+}
+
+@media (max-width: 449px) {
+
+   .experience-section-cell2{
+       width: 26rem !important;
+   }
+
+   .card{
+       width: 26rem !important;
+   }
+}
+
+
+
+
 
