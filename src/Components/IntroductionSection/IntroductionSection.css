@@ -71,16 +71,6 @@
     transition: transform 0.7s ease, background-color 0.3s ease;
 }
 
-/* Extra small devices (phones, <576px) */
-@media (max-width: 575.98px) { }
-
-/* Small devices (phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) { }
-
-/* Hide navbar links on tablets and phones */
-@media (max-width: 991.98px) {
-
-}
 
 @media (max-width: 891px) {
     .introduction-container {
@@ -88,9 +78,9 @@
         align-items: flex-end;
     }
     .introduction-section {
-        flex-direction: column;
+        flex-direction: column !important;
+        justify-content: center !important;
         height: auto;
-        margin-left: 1rem;
         margin-bottom: 10rem;
     }
     .breakline-1, .breakline-2 {
@@ -101,17 +91,61 @@
     }
 
     .introduction-article{
-        max-width: 80rem;
+        max-width: 50rem;
         max-height: 20rem;
     }
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) { }
+@media (min-width: 537px) and (max-width: 891px) {
+    .introduction-section {
+        height: auto;
+    }
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) and (max-width: 1399.98px) { }
+    .introduction-article{
+        max-width: 50rem;
+        max-height: 20rem;
+    }
+}
 
-/* 2K+ devices (very large screens, 1400px and up) */
-@media (min-width: 1400px) { }
+@media (min-width: 600px) and (max-width: 700px) {
+    .introduction-section{
+        margin-left: 3rem !important;
+    }
+}
+
+@media (min-width: 520px) and (max-width: 600px) {
+    .introduction-section{
+        margin-left: 1rem !important;
+    }
+
+    .introduction-greeting{
+        max-width: 30.5rem;
+    }
+}
+
+@media (min-width: 440px) and (max-width: 519px) {
+    .introduction-section{
+        margin-left: 1rem !important;
+        background-color: red;
+    }
+
+    .introduction-greeting{
+        max-width: 29rem;
+    }
+}
+
+@media (max-width: 439px) {
+    .introduction-section{
+        margin-left: 1rem !important;
+    }
+
+    .introduction-greeting{
+        max-width: 23rem;
+    }
+
+    .introduction-article{
+        max-width: 29.2rem !important;
+    }
+}
+
 
