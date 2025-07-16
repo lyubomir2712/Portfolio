@@ -4,7 +4,12 @@ body{
   background-color: #0d1224;
   font-family: 'Poppins', sans-serif;
   color: white;
+  cursor: url("src/assets/Icons/arrowhead-rounded-outline.png") 0 0, auto;
 }
+
+button{
+}
+
 html{
   scroll-behavior: smooth;
 }
