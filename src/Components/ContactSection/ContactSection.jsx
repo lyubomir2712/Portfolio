@@ -94,7 +94,7 @@ export default function ContactSection() {
                         </div>
                     </div>
 
-                    <div className="contacts-buttons-container pl-[45%] w-[100%]">
+                    <div className="contacts-buttons-container w-[100%]">
                         <div className="email-location-container gap-5 flex flex-col">
                             <motion.span
                                 className="text-sm md:text-xl flex items-center gap-3 w-90"
@@ -111,7 +111,7 @@ export default function ContactSection() {
                             </motion.span>
 
                             <motion.span
-                                className="text-sm md:text-xl flex items-center gap-3 w-90"
+                                className="text-sm md:text-xl flex items-center gap-3 w-90 whitespace-nowrap"
                                 initial={{ opacity: 0, x: 30 }}
                                 animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
                                 transition={{ duration: 0.8, delay: 0.4 }}>

@@ -251,3 +251,133 @@ textarea:focus, textarea:not(:placeholder-shown) {
     background-color: #16F2B3;
 }
 
+.contacts-buttons-container{
+    padding-left: 45%;
+}
+
+
+
+
+
+
+@media(min-width: 750px) and (max-width: 1380px) {
+    .contact-section {
+        margin: 0 auto;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .contact-form{
+        width: 100%;
+    }
+
+    .contacts-cell2 {
+        align-items: flex-start;
+        width: 52rem !important;
+    }
+
+    .contacts-buttons-container{
+        padding-left: 3.7rem !important;
+    }
+
+    .email-location-container{
+        flex-direction: row;
+        gap: 5rem;
+    }
+}
+
+
+@media(min-width: 590px) and (max-width: 749px) {
+    .contact-section {
+        margin: 0 auto;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .contact-form{
+        width: 35rem;
+    }
+
+    .contacts-cell2 {
+        align-items: flex-start;
+        width: 42rem !important;
+    }
+
+    .input-container, .textarea-container {
+        width: 33rem !important;
+    }
+
+
+    .contacts-cell2 {
+        align-items: flex-start;
+    }
+
+    .contacts-buttons-container{
+        padding-left: 3.7rem !important;
+    }
+
+    .email-location-container{
+        flex-direction: row;
+        gap: 5rem;
+    }
+}
+
+@media (max-width: 589px) {
+    .contact-section {
+        margin: 0 auto;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .contact-form{
+        width: 25rem;
+    }
+
+    .contacts-cell2 {
+        align-items: flex-start;
+        width: 32rem !important;
+    }
+
+    .input-container, .textarea-container {
+        width: 23rem !important;
+    }
+
+
+    .contacts-cell2 {
+        align-items: flex-start;
+    }
+
+    .contacts-buttons-container{
+        padding-left: 3.7rem !important;
+    }
+
+    .email-location-container{
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .contact-form button {
+        padding: 8px 16px;
+        font-size: 10px;
+    }
+
+    .contact-form button svg {
+        width: 16px;
+        height: 16px;
+    }
+}
