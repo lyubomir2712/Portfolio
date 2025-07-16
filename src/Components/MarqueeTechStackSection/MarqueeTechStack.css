@@ -5,7 +5,7 @@
 
 .marquee-tech-stack-section .title-container{
     backdrop-filter: blur(64px);
-    -webkit-backdrop-filter: blur(64px); /* For Safari support */
+    -webkit-backdrop-filter: blur(64px);
 }
 
 .marquee{
@@ -69,6 +69,17 @@
 @keyframes marquee {
     0%   { transform: translateX(0); }
     100% { transform: translateX(-49.6%); }
+}
+
+@media(max-width: 1000px) {
+    .marquee__inner {
+        scale: 0.5;
+    }
+
+    @keyframes marquee {
+        0%   { transform: translateX(-51%); }
+        100% { transform: translateX(-100.5%); }
+    }
 }
 
 
