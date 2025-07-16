@@ -7,7 +7,7 @@ import {useState} from "react";
 
 const projectsData = [
     {
-        img: "../../../public/HotelBookingImg.jpg",
+        img: "src/assets/HotelBookingImg.jpg",
         title: "Hotel Booking",
         description: "MVC Project with CRUD operations and external API calls with HTTP Client;",
         codeLink: "https://github.com/lyubomir2712/Hotel_Booking",
@@ -15,7 +15,7 @@ const projectsData = [
         delay: 0.2
     },
     {
-        img: "../../../public/StockApiImg.webp",
+        img: "src/assets/StockApiImg.webp",
         title: "Stock Exchange",
         description: "Group Project in .NET where four API's work together through a Gateway. The business logic is implemented through a custom ORM technology.",
         codeLink: "https://github.com/MrArthur0507/StockAPI",
@@ -23,7 +23,7 @@ const projectsData = [
         delay: 0.4
     },
     {
-        img: "../../../public/CarWashImg.jpeg",
+        img: "src/assets/CarWashImg.jpeg",
         title: "GTR Car Wash",
         description: "Full‑Stack React/ASP.NET Web Application about a car wash with service.",
         codeLink: " ",
@@ -31,7 +31,7 @@ const projectsData = [
         delay: 0.6
     },
     {
-        img: "../../../public/BoardGameImg.png",
+        img: "src/assets/BoardGameImg.png",
         title: "Board Game",
         description: "Quiz themed JavaScript board game featuring questions about english works: \"Hamlet\" and \"The Lord of The Rings\".",
         codeLink: "https://github.com/lyubomir2712/English_Literature_Board_Game",
