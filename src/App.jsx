@@ -12,6 +12,7 @@ import AboutMeSection from "./Components/AboutMeSection/AboutMeSection.jsx";
 import ScrollTopButton from "./Components/ScrollTopButton/ScrollTopButton.jsx";
 import handPointer from './assets/Icons/hand-pointer.png';
 import {useEffect} from "react";
+import cursorImg from './assets/Icons/arrowhead-rounded-outline.png';
 
 
 function App() {
@@ -23,10 +24,13 @@ function App() {
             el.style.cursor = pointerStyle;
         });
 
+        document.body.style.cursor = `url(${cursorImg}) 0 0, auto`;
+
         return () => {
             clickableElements.forEach(el => {
                 el.style.cursor = ''; // Reset on cleanup
             });
+            document.body.style.cursor = '';
         };
     }, [handPointer]);
   return (
