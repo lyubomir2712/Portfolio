@@ -28,7 +28,7 @@ function App() {
             clickableElements.forEach(applyCursor);
         };
 
-        updateCursor(); // First time
+        updateCursor();
         const observer = new MutationObserver(updateCursor);
         observer.observe(document.body, { childList: true, subtree: true });
 
