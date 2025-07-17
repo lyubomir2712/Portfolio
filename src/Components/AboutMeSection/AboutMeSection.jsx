@@ -1,7 +1,7 @@
 import "./AboutMeSection.css"
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
-
+import profile from "./../../assets/profile.jpeg";
 export default function AboutMeSection() {
     const { ref, inView } = useInView({
         triggerOnce: true,
@@ -29,7 +29,7 @@ export default function AboutMeSection() {
                 <div className="about-me-cell2 about-me-profile grid [grid-template-columns:3fr_1fr] gap-4 justify-items-end">
                     <motion.img
                         className="profile-img w-75 h-auto rounded-lg"
-                        src="src/assets/profile.jpeg"
+                        src={profile}
                         alt="profile"
                         initial={{ x: 30, opacity: 0, filter: "grayscale(100%)", scale: 1 }}
                         animate={inView ? { x: 0, opacity: 1 } : { x: 30, opacity: 0 }}

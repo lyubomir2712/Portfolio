@@ -4,10 +4,15 @@ import {motion} from 'framer-motion';
 import DivisionLine from "../DivisionLine/DivisionLine.jsx";
 import Title from "../Title/Title.jsx";
 import {useState} from "react";
+import hotelBookingProjectImg from "./../../assets/HotelBookingImg.jpg"
+import stockApiProject from "./../../assets/StockApiImg.webp"
+import carWashProjectImg from "./../../assets/CarWashImg.jpeg"
+import boardGameProjectImg from "./../../assets/BoardGameImg.png"
+
 
 const projectsData = [
     {
-        img: "src/assets/HotelBookingImg.jpg",
+        img: hotelBookingProjectImg,
         title: "Hotel Booking",
         description: "MVC Project with CRUD operations and external API calls with HTTP Client;",
         codeLink: "https://github.com/lyubomir2712/Hotel_Booking",
@@ -15,7 +20,7 @@ const projectsData = [
         delay: 0.2
     },
     {
-        img: "src/assets/StockApiImg.webp",
+        img: stockApiProject,
         title: "Stock Exchange",
         description: "Group Project in .NET where four API's work together through a Gateway. The business logic is implemented through a custom ORM technology.",
         codeLink: "https://github.com/MrArthur0507/StockAPI",
@@ -23,7 +28,7 @@ const projectsData = [
         delay: 0.4
     },
     {
-        img: "src/assets/CarWashImg.jpeg",
+        img: carWashProjectImg,
         title: "GTR Car Wash",
         description: "Full‑Stack React/ASP.NET Web Application about a car wash with service.",
         codeLink: " ",
@@ -31,7 +36,7 @@ const projectsData = [
         delay: 0.6
     },
     {
-        img: "src/assets/BoardGameImg.png",
+        img: boardGameProjectImg,
         title: "Board Game",
         description: "Quiz themed JavaScript board game featuring questions about english works: \"Hamlet\" and \"The Lord of The Rings\".",
         codeLink: "https://github.com/lyubomir2712/English_Literature_Board_Game",
