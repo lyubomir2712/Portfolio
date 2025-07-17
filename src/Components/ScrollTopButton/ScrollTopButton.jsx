@@ -20,6 +20,7 @@ export default function ScrollTopButton() {
 
     return (
         <button
+            role="button"
             onClick={scrollToTop}
             className="fixed bottom-5 right-5 w-12 h-12 rounded-full bg-pink-500 text-white flex items-center justify-center shadow-lg hover:bg-pink-600 transition duration-300 z-50"
             aria-label="Scroll to top"

@@ -17,22 +17,28 @@ import cursorImg from './assets/Icons/arrowhead-rounded-outline.png';
 
 function App() {
     useEffect(() => {
-        const pointerStyle = `url(${handPointer}) 0 0, pointer`;
-        const clickableElements = document.querySelectorAll('button, a, [role="button"]');
+        const pointerStyle = `url(${handPointer}) 4 4, pointer`; // 4 4 = cursor hotspot
 
-        clickableElements.forEach(el => {
-            el.style.cursor = pointerStyle;
-        });
+        const applyCursor = (el) => {
+            el.style.setProperty('cursor', pointerStyle, 'important');
+        };
+
+        const updateCursor = () => {
+            const clickableElements = document.querySelectorAll('button, a, [role="button"]');
+            clickableElements.forEach(applyCursor);
+        };
+
+        updateCursor(); // First time
+        const observer = new MutationObserver(updateCursor);
+        observer.observe(document.body, { childList: true, subtree: true });
 
         document.body.style.cursor = `url(${cursorImg}) 0 0, auto`;
 
         return () => {
-            clickableElements.forEach(el => {
-                el.style.cursor = ''; // Reset on cleanup
-            });
+            observer.disconnect();
             document.body.style.cursor = '';
         };
-    }, [handPointer]);
+    }, []);
   return (
     <>
         <Navbar/>
