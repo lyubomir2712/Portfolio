@@ -32,7 +32,7 @@ export default function AboutMeSection() {
                         src={profile}
                         alt="profile"
                         initial={{
-                            x: window.innerWidth < 1200 ? -30 : 30,
+                            x: window.innerWidth < 1400 ? -30 : 30,
                             opacity: 0,
                             filter: "grayscale(100%)",
                             scale: 1
@@ -45,7 +45,7 @@ export default function AboutMeSection() {
                                     transition: { duration: 1.75 }
                                 }
                                 : {
-                                    x: window.innerWidth < 1200 ? -100 : -30,
+                                    x: window.innerWidth < 1400 ? -100 : -30,
                                     opacity: 0,
                                     transition: { duration: 1.75 }
                                 }
@@ -54,7 +54,7 @@ export default function AboutMeSection() {
                         whileHover={{
                             filter: "grayscale(0%)",
                             scale: 1.05,
-                            transition: { duration: 0.75, ease: "easeOut" }
+                            transition: { duration: 0.6, ease: "easeOut" }
                         }}
                     />
 

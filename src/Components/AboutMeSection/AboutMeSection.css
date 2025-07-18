@@ -9,7 +9,7 @@
     background-color: #1a1443;
 }
 
-@media(min-width: 650px) and (max-width: 1200px) {
+@media(min-width: 650px) and (max-width: 1400px) {
     .about-me-container {
         display: grid;
         grid-template-columns: 1fr;
