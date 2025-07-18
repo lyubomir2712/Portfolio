@@ -106,6 +106,7 @@ export default function IntroductionSection() {
 
             <article className="tech-stack-article">
                 <motion.div
+                    className="greetings-code-container"
                     initial={{opacity: 0, x: 30}}
                     animate={inView ? {opacity: 1, x: 0} : {opacity: 0, x: 30}}
                     transition={{duration: 1.75, ease: "easeOut"}}

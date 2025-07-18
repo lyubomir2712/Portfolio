@@ -16,7 +16,7 @@
     transform: scale(1.02);
 }
 
-.projects-card-image {
+.projects-card-image img{
     position: relative;
     height: 9rem;
     overflow: hidden;

@@ -4,7 +4,6 @@
     justify-content: stretch;
     width: 70%;
     height: 35rem;
-    overflow: hidden;
 }
 .introduction-article{
     height: 30rem;
@@ -15,6 +14,10 @@
     height: 20rem;
     width: 50rem;
     min-height: 10rem;
+}
+
+.greetings-code-container{
+    width: auto;
 }
 
 .name{
@@ -105,6 +108,10 @@
     .introduction-article{
         max-width: 50rem;
         max-height: 20rem;
+    }
+
+    .tech-stack-article{
+        max-width: 20rem !important;
     }
 }
 
