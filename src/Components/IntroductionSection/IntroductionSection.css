@@ -7,18 +7,15 @@
 }
 .introduction-article{
     height: 30rem;
-    width: 25rem;
+    width: 32rem;
     min-height: 10rem;
 }
 .tech-stack-article{
     height: 20rem;
-    width: 25rem;
+    width: 50rem;
     min-height: 10rem;
 }
 
-.greetings-code-container{
-    width: auto;
-}
 
 .name{
     color: #EC4899;
@@ -87,6 +84,7 @@
         height: auto;
         margin-bottom: 10rem;
     }
+
     .breakline-1, .breakline-2 {
         display: none;
     }
@@ -100,25 +98,11 @@
     }
 }
 
-@media (min-width: 537px) and (max-width: 891px) {
-    .introduction-section {
-        height: auto;
-    }
-
-    .introduction-article{
-        max-width: 50rem;
-        max-height: 20rem;
-    }
-
-    .tech-stack-article{
-        max-width: 20rem !important;
-    }
-}
-
 @media (min-width: 600px) and (max-width: 700px) {
     .introduction-section{
         margin-left: 3rem !important;
     }
+
 }
 
 @media (min-width: 520px) and (max-width: 600px) {
@@ -152,6 +136,169 @@
 
     .introduction-article{
         max-width: 29.2rem !important;
+    }
+}
+
+
+
+
+@media (min-width: 537px) and (max-width: 891px) {
+    .introduction-section {
+        height: auto;
+    }
+
+    .introduction-article{
+        max-width: 50rem;
+        max-height: 20rem;
+    }
+}
+
+@media (min-width: 602px) and (max-width: 891px) {
+    .tech-stack-article{
+        max-width: 33.6rem;
+    }
+}
+
+@media (min-width: 530px) and (max-width: 601px) {
+    .tech-stack-article{
+        max-width: 32rem;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 529px) {
+    .introduction-article{
+        max-width: 30rem;
+    }
+
+    .tech-stack-article{
+        max-width: 30rem;
+    }
+}
+
+@media (min-width: 469px) and (max-width: 499px) {
+    .introduction-article{
+        max-width: 28rem;
+    }
+
+    .tech-stack-article{
+        max-width: 28rem;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 468px) {
+    .introduction-article{
+        width: 26rem !important;
+    }
+
+    .introduction, .introduction-description, .introduction-socials{
+        width: 24rem !important;
+    }
+
+    .tech-stack-article{
+        max-width: 26rem;
+    }
+}
+
+
+
+
+
+
+@media (min-width: 400px) and (max-width: 419px) {
+    .introduction-article{
+        width: 24rem !important;
+    }
+
+    .introduction, .introduction-description, .introduction-socials{
+        width: 24rem !important;
+    }
+
+    .tech-stack-article{
+        max-width: 24rem;
+    }
+}
+
+@media (min-width: 370px) and (max-width: 399px) {
+    .introduction-article{
+        width: 22rem !important;
+    }
+
+    .introduction, .introduction-description, .introduction-socials{
+        width: 22rem !important;
+    }
+
+    .tech-stack-article{
+        max-width: 22rem;
+    }
+}
+
+@media (min-width: 339px) and (max-width: 369px) {
+    .introduction-article{
+        width: 20rem !important;
+    }
+
+    .introduction, .introduction-description, .introduction-socials{
+        width: 20rem !important;
+    }
+
+    .tech-stack-article{
+        max-width: 20rem;
+    }
+}
+
+@media (min-width: 290px) and (max-width: 338px) {
+    .introduction-article{
+        width: 17rem !important;
+    }
+
+    .introduction, .introduction-description, .introduction-socials{
+        width: 17rem !important;
+    }
+
+    .tech-stack-article{
+        max-width: 17rem;
+    }
+}
+
+@media (min-width: 256px) and (max-width: 289px) {
+    .introduction-article{
+        width: 15rem !important;
+    }
+
+    .introduction, .introduction-description, .introduction-socials{
+        width: 15rem !important;
+    }
+
+    .tech-stack-article{
+        max-width: 15rem;
+    }
+}
+
+@media (min-width: 256px) and (max-width: 289px) {
+    .introduction-article{
+        width: 15rem !important;
+    }
+
+    .introduction, .introduction-description, .introduction-socials{
+        width: 15rem !important;
+    }
+
+    .tech-stack-article{
+        max-width: 15rem;
+    }
+}
+
+@media  (max-width: 255px) {
+    .introduction-article{
+        width: 13rem !important;
+    }
+
+    .introduction, .introduction-description, .introduction-socials{
+        width: 13rem !important;
+    }
+
+    .tech-stack-article{
+        max-width: 13rem;
     }
 }
 
