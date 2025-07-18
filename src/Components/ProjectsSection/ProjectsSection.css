@@ -11,10 +11,10 @@
 
 }
 
-.projects-card:hover{
-    border: 0.5px solid #546083;
-    transform: scale(1.02);
-}
+/*.projects-card:hover{*/
+/*    border: 0.5px solid #546083;*/
+/*    transform: scale(1.02);*/
+/*}*/
 
 .projects-card-image img{
     position: relative;

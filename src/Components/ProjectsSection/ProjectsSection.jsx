@@ -80,12 +80,15 @@ export default function ProjectsSection() {
                         transition={{ duration: 1, ease: "easeOut", delay: project.delay }}
                         onHoverStart={() => setHoveredCard(idx)}
                         onHoverEnd={() => setHoveredCard(null)}
+                        style={{
+                            border: hoveredCard === idx ? '0.5px solid #546083' : '0.5px solid transparent'
+                        }}
                     >
                         <div className="projects-card-image">
                             <motion.img
                                 src={project.img}
                                 alt={`${project.title} card`}
-                                animate={{ scale: hoveredCard === idx ? 1.1 : 1 }}
+                                animate={{ scale: hoveredCard === idx ? 1.06 : 1 }}
                                 transition={{ duration: 0.01 }}
                             />
                         </div>
