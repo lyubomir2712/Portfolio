@@ -40,7 +40,7 @@ const projectsData = [
         title: "Board Game",
         description: "Quiz themed JavaScript board game featuring questions about english works: \"Hamlet\" and \"The Lord of The Rings\".",
         codeLink: "https://github.com/lyubomir2712/English_Literature_Board_Game",
-        openLink: " ",
+        openLink: "https://lyubomir2712.github.io/English_Literature_Board_Game/",
         delay: 0.8
     }
 ];
