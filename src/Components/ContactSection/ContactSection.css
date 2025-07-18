@@ -257,8 +257,6 @@ textarea:focus, textarea:not(:placeholder-shown) {
 }
 
 
-
-
 @media(max-width: 1380px) {
     .contact-section {
         margin: 0 auto;
