@@ -31,10 +31,32 @@ export default function AboutMeSection() {
                         className="profile-img w-75 h-auto rounded-lg"
                         src={profile}
                         alt="profile"
-                        initial={{ x: 30, opacity: 0, filter: "grayscale(100%)", scale: 1 }}
-                        animate={inView ? { x: 0, opacity: 1 } : { x: 30, opacity: 0 }}
-                        whileHover={{ filter: "grayscale(0%)", scale: 1.05 }}
-                        transition={{ duration: 0.5 }}/>
+                        initial={{
+                            x: window.innerWidth < 1200 ? -30 : 30,
+                            opacity: 0,
+                            filter: "grayscale(100%)",
+                            scale: 1
+                        }}
+                        animate={
+                            inView
+                                ? {
+                                    x: 0,
+                                    opacity: 1,
+                                    transition: { duration: 1.75 }
+                                }
+                                : {
+                                    x: window.innerWidth < 1200 ? -100 : -30,
+                                    opacity: 0,
+                                    transition: { duration: 1.75 }
+                                }
+                        }
+                        transition={{ duration: 1, ease: "easeOut" }}
+                        whileHover={{
+                            filter: "grayscale(0%)",
+                            scale: 1.05,
+                            transition: { duration: 0.75, ease: "easeOut" }
+                        }}
+                    />
 
                     <motion.span
                         className="bg-[#1a1443] w-38 h-10 inline-block text-white rotate-90 mt-14 p-2 px-3 text-xl rounded-md about-me-title"
