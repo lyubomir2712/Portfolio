@@ -4,6 +4,7 @@
     justify-content: stretch;
     width: 70%;
     height: 35rem;
+    overflow: hidden;
 }
 .introduction-article{
     height: 30rem;

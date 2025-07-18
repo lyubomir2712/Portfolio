@@ -1,6 +1,7 @@
 .education-section {
     margin-top: 5rem;
     position: relative;
+    overflow: hidden;
 }
 
 .education-title-container {
