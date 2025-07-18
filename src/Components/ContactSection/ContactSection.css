@@ -322,6 +322,10 @@ textarea:focus, textarea:not(:placeholder-shown) {
     .email-location-container{
         gap: 5rem;
     }
+
+    .contacts-cell2 {
+        margin-left: 1rem;
+    }
 }
 
 @media (max-width: 589px) {
@@ -355,5 +359,9 @@ textarea:focus, textarea:not(:placeholder-shown) {
     .contact-form button svg {
         width: 16px;
         height: 16px;
+    }
+
+    .contacts-cell2 {
+        margin-left: 2rem;
     }
 }
