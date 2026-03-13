@@ -31,7 +31,11 @@ export default function GreetingsCodeComponent() {
                 <span className="text-gray-400">', '</span><span className="text-amber-300">TypeScript</span><span className="text-gray-400">', '</span><span className="text-amber-300">CSS</span>
                 <span className="text-gray-400">', '</span><span className="text-amber-300">MSSQL</span><span className="text-gray-400">', '</span><span className="text-amber-300">Docker</span>
                 <span className="text-gray-400">', '</span><span className="text-amber-300">Azure</span><span className="text-gray-400">', '</span><span className="text-amber-300">RabbitMQ</span>
+                <span className="text-gray-400">', '</span><span className="text-amber-300">Kafka</span><span className="text-gray-400">', '</span><span className="text-amber-300">SignalR</span>
+                <span className="text-gray-400">', '</span><span className="text-amber-300">XUnit</span><span className="text-gray-400">', '</span><span className="text-amber-300">Moq</span>
                 <span className="text-gray-400">', '</span><span className="text-amber-300">JavaScript</span><span className="text-gray-400">', '</span><span className="text-amber-300">Git</span>
+
+
                 <span className="text-gray-400">'],</span></div><div><span className="ml-4 lg:ml-8 mr-2 text-white">hardWorker:</span><span className="text-orange-400">true</span>
                 <span className="text-gray-400">,</span></div><div><span className="ml-4 lg:ml-8 mr-2 text-white">quickLearner:</span><span className="text-orange-400">true</span>
                 <span className="text-gray-400">,</span></div><div><span className="ml-4 lg:ml-8 mr-2 text-white">problemSolver:</span><span className="text-orange-400">true</span>
@@ -42,7 +46,7 @@ export default function GreetingsCodeComponent() {
                 <div><span className="ml-12 lg:ml-24 text-cyan-400">this.</span><span className="mr-2 text-white">skills.length</span><span className="mr-2 text-amber-300">&gt;=</span>
                     <span className="text-orange-400">5</span></div><div><span className="ml-8 lg:ml-16 mr-2 text-gray-400">);</span></div><div><span className="ml-4 lg:ml-8 text-gray-400">&#125;;</span>
                 </div>
-                <div><span className="text-gray-400">&#125;;</span></div>
+                <div><span className="text-pink-500">&#125;;</span></div>
             </code></div>
         </div>
     )

@@ -166,10 +166,10 @@ export default function MarqueeTechStack() {
                                 <div className="marquee-cell h-8 sm:h-10 w-8 sm:w-10"><img alt="React" loading="lazy" width="120" height="120"
                                                                                            decoding="async" data-nimg="1"
                                                                                            className="h-full w-auto rounded-lg"
-                                                                                           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bitbucket/bitbucket-original.svg"
+                                                                                           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg"
                                                                                            style={{color: "transparent"}}/>
                                 </div>
-                                <p className="text-white text-sm sm:text-lg">Bitbucket</p>
+                                <p className="text-white text-sm sm:text-lg">Redis</p>
                             </div>
                         </div>
                     </div>

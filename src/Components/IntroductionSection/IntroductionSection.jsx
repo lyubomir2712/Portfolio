@@ -90,8 +90,8 @@ export default function IntroductionSection() {
                 </div>
 
                 <motion.a className="flex items-center justify-center mt-8 w-46 hover:w-48 h-15 gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-semibold uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline"
-                   role="button" target="_blank"
-                          href="LyubomirGeorgievGeorgievResume.pdf"
+                   role="button"
+                          href={`${import.meta.env.BASE_URL}LyubomirGeorgievResume.pdf`}
                           download="LyubomirGeorgievResume.pdf"
                           initial={{opacity: 0, y: 20}}
                           animate={inView ? {opacity: 1, y: 0} : {opacity: 0, y: 20}}

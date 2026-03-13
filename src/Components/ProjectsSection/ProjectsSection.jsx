@@ -13,8 +13,8 @@ import boardGameProjectImg from "./../../assets/BoardGameImg.png"
 const projectsData = [
     {
         img: hotelBookingProjectImg,
-        title: "Hotel Booking",
-        description: "MVC Project with CRUD operations and external API calls with HTTP Client;",
+        title: "EasyBook",
+        description: "AI-powered hotel booking platform with MailKit email service, Kafka-based microservices, Redis caching, SignalR real-time notifications, automated tests, and Docker containerization",
         codeLink: "https://github.com/lyubomir2712/Hotel_Booking",
         openLink: null,
         delay: 0.2
@@ -31,7 +31,7 @@ const projectsData = [
         img: carWashProjectImg,
         title: "GTR Car Wash",
         description: "Full‑Stack React/ASP.NET Web Application about a car wash with service.",
-        codeLink: " ",
+        codeLink: null,
         openLink: null,
         delay: 0.6
     },
