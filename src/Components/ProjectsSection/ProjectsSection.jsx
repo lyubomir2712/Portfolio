@@ -14,7 +14,7 @@ const projectsData = [
     {
         img: hotelBookingProjectImg,
         title: "EasyBook",
-        description: "AI-powered hotel booking platform with MailKit email service, Kafka-based microservices, Redis caching, SignalR real-time notifications, automated tests, and Docker containerization",
+        description: "AI-powered hotel booking platform with MailKit email service, Kafka-based microservices, Redis caching, SignalR real-time notifications and automated tests",
         codeLink: "https://github.com/lyubomir2712/Hotel_Booking",
         openLink: null,
         delay: 0.2

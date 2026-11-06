@@ -41,6 +41,14 @@ export default function ExperienceSection() {
                         animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 60 }}
                         transition={{ duration: 1, delay: 0.5 }}>
 
+                        <Card date={"05/2026 - 10/2026"} title={".NET Developer"} text={"EGT Digital\n"}/>
+                    </motion.div>
+
+                    <motion.div
+                        initial={{ opacity: 0, x: 60 }}
+                        animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 60 }}
+                        transition={{ duration: 1, delay: 1 }}>
+
                         <Card date={"02/2024 - 01/2025"} title={"Full-Stack React .NET Developer"} text={"St. Cyril and St. Methodius University of Veliko Tarnovo\n"}/>
                     </motion.div>
                 </div>

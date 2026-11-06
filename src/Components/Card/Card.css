@@ -26,6 +26,7 @@
     height: 11.8rem;
     width: auto;
     left: 0;
+    pointer-events: none;
 }
 
 .card-cell1 {
@@ -48,6 +49,11 @@
     font-weight: 500;
     text-align: left;
     padding: 0;
+}
+
+.card-cell3,
+.card-cell3:hover {
+    color: inherit;
 }
 
 .card-cell4 {
